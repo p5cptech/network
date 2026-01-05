@@ -1,0 +1,49 @@
+# Dirsearch started Wed Dec 17 16:00:27 2025 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u aws.adrindo.com/
+
+200     6KB  http://aws.adrindo.com/.DS_Store
+200   109B   http://aws.adrindo.com/.htaccess
+403     4KB  http://aws.adrindo.com/.wp-config.php.swp
+403   555B   http://aws.adrindo.com/assets/
+301   169B   http://aws.adrindo.com/assets    -> REDIRECTS TO: http://172.17.0.1/assets/
+301   169B   http://aws.adrindo.com/icons    -> REDIRECTS TO: http://172.17.0.1/icons/
+200   959B   http://aws.adrindo.com/manifest.json
+301   169B   http://aws.adrindo.com/mobile    -> REDIRECTS TO: http://172.17.0.1/mobile/
+200     1KB  http://aws.adrindo.com/robots.txt
+403   280B   http://aws.adrindo.com/server-status
+403   280B   http://aws.adrindo.com/server-status/
+403     4KB  http://aws.adrindo.com/wp-config.php
+403     4KB  http://aws.adrindo.com/wp-config.php-bak
+403     4KB  http://aws.adrindo.com/wp-config.php.9
+403     4KB  http://aws.adrindo.com/wp-config.php.4
+403     4KB  http://aws.adrindo.com/wp-config.php.3
+403     4KB  http://aws.adrindo.com/wp-config.php.7
+403     4KB  http://aws.adrindo.com/wp-config.php.0
+403     4KB  http://aws.adrindo.com/wp-config.php.1
+403     4KB  http://aws.adrindo.com/wp-config.php.2
+403     4KB  http://aws.adrindo.com/wp-config.php.bak
+403     4KB  http://aws.adrindo.com/wp-config.php.bak1
+403     4KB  http://aws.adrindo.com/wp-config.php.6
+403     4KB  http://aws.adrindo.com/wp-config.php.backup
+403     4KB  http://aws.adrindo.com/wp-config.php.bk
+403     4KB  http://aws.adrindo.com/wp-config.php.8
+403     4KB  http://aws.adrindo.com/wp-config.php.5
+403     4KB  http://aws.adrindo.com/wp-config.php.dist
+403     4KB  http://aws.adrindo.com/wp-config.php.cust
+403     4KB  http://aws.adrindo.com/wp-config.php.new
+403     4KB  http://aws.adrindo.com/wp-config.php.inc
+403     4KB  http://aws.adrindo.com/wp-config.php.disabled
+403     4KB  http://aws.adrindo.com/wp-config.php.old
+403     4KB  http://aws.adrindo.com/wp-config.php.orig
+403     4KB  http://aws.adrindo.com/wp-config.php.save
+403     4KB  http://aws.adrindo.com/wp-config.php.original
+403     4KB  http://aws.adrindo.com/wp-config.php.swn
+403     4KB  http://aws.adrindo.com/wp-config.php.swo
+403     4KB  http://aws.adrindo.com/wp-config.php_bak
+403     4KB  http://aws.adrindo.com/wp-config.php.zip
+403     4KB  http://aws.adrindo.com/wp-config.php.txt
+403     4KB  http://aws.adrindo.com/wp-config.php_1
+403     4KB  http://aws.adrindo.com/wp-config.php_
+403     4KB  http://aws.adrindo.com/wp-config.php.swp
+403     4KB  http://aws.adrindo.com/wp-config.php_new
+403     4KB  http://aws.adrindo.com/wp-config.php_Old
+403     4KB  http://aws.adrindo.com/wp-config.php~

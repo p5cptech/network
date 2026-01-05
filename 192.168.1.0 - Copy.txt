@@ -1,0 +1,1932 @@
+Nmap scan report for 192.168.1.1
+PORT     STATE SERVICE        VERSION
+2000/tcp open  bandwidth-test MikroTik bandwidth-test server
+
+Nmap scan report for 192.168.1.2
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+23/tcp  open  telnet     HP JetDirect telnetd
+| fingerprint-strings: 
+|   GenericLines: 
+|     ***************** User Access Login ********************
+|     User:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|   GetRequest: 
+|     ***************** User Access Login ********************
+|     User:GET / HTTP/1.0
+|     Password:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|   Help: 
+|     ***************** User Access Login ********************
+|     User:HELP
+|     Password:
+|   NULL, tn3270: 
+|     ***************** User Access Login ********************
+|_    User:
+80/tcp  open  http       Web Switch
+443/tcp open  ssl/https?
+
+
+Nmap scan report for 192.168.1.3
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+23/tcp  open  telnet     TP-LINK TL-SG2008 telnetd
+80/tcp  open  http       TP-LINK switch httpd (lang: en)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.3
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.3:80/
+|     Form id: \
+|_    Form action: \
+|
+443/tcp open  ssl/https?
+
+
+
+Nmap scan report for 192.168.1.4
+PORT      STATE SERVICE       VERSION
+25/tcp    open  smtp-proxy    CCProxy smtp proxy 8.0
+33/tcp    open  dsp?
+110/tcp   open  pop3-proxy    CCProxy pop3d 8.0
+113/tcp   open  ssl/pop3      Dovecot pop3d
+125/tcp   open  pop3          Dovecot pop3d
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+465/tcp   open  ssl/smtp      Google gsmtp
+808/tcp   open  ccproxy-http?
+995/tcp   open  ssl/pop3      Google Gmail pop3d (d2e1a72fcca58)
+5800/tcp  open  vnc-http      TightVNC (user: pc-proxy-36; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49161/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.7
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          IBM OS/400 FTPd
+23/tcp   open  telnet       IBM OS/400 telnetd
+139/tcp  open  netbios-ssn?
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+3000/tcp open  as-sts       IBM Service Tool Server AS-STS
+
+
+
+
+Nmap scan report for 192.168.1.8
+PORT   STATE SERVICE VERSION
+80/tcp open  http?
+
+
+Nmap scan report for 192.168.1.9
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+23/tcp  open  telnet     HP JetDirect telnetd
+| fingerprint-strings: 
+|   GenericLines: 
+|     ***************** User Access Login ********************
+|     User:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|   GetRequest: 
+|     ***************** User Access Login ********************
+|     User:GET / HTTP/1.0
+|     Password:
+|     Login invalid.
+|     ***************** User Access Login ********************
+|     User:
+|   Help: 
+|     ***************** User Access Login ********************
+|     User:HELP
+|     Password:
+|   NULL, tn3270: 
+|     ***************** User Access Login ********************
+|_    User:
+80/tcp  open  http       Web Switch
+
+
+
+Nmap scan report for 192.168.1.10
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5800/tcp  open  vnc-http      TightVNC (user: adrsoft; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+
+
+Nmap scan report for 192.168.1.11
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2012 11.00.2100; RTM
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-trace: TRACE is enabled
+| http-enum: 
+|   /test.php: Test page
+|   /phpinfo.php: Possible information file
+|   /phpmyadmin/: phpMyAdmin
+|   /phpMyAdmin/: phpMyAdmin
+|_  /PHPMyAdmin/: phpMyAdmin
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+
+
+
+Nmap scan report for 192.168.1.12
+PORT     STATE SERVICE         VERSION
+80/tcp   open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server   Microsoft Terminal Services
+5800/tcp open  http-proxy      sslstrip
+5900/tcp open  vnc             VNC (protocol 3.8)
+6129/tcp open  damewaremr      DameWare Mini Remote Control
+7070/tcp open  ssl/realserver?
+
+
+
+Nmap scan report for 192.168.1.15
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.15
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open(url, windowtitle, 'width=' + popwidth + ',height=' + popheight + ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=yes')
+|     Pages: https://192.168.1.15:1311/oma/js/Clarity.js
+|     
+|     Source: window.open(page, n_windowid, config='height=320,width=600,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|     Pages: https://192.168.1.15:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=550,width=930,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,location=yes,directories=no,status=yes')
+|     Pages: https://192.168.1.15:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=450,width=850,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|_    Pages: https://192.168.1.15:1311/oma/js/gnavbar.js
+|_http-server-header: Apache-Coyote/1.1
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+
+
+
+Nmap scan report for 192.168.1.17
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 7.| vulners: 
+| http-enum: 
+|   /reportserver/: Microsoft SQL Report Service (401 Unauthorized)
+|_  /reports/: Potentially interesting folder (401 Unauthorized)
+|_http-server-header: Microsoft-IIS/7.5
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2008 R2 10.50.1600; RTM
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+
+
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+
+
+Nmap scan report for 192.168.1.18
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+
+5800/tcp  open  vnc-http      TightVNC (user: ssfs2; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.18
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.18:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=fjah2h7fa3sdfc2p5phcinejh4
+|     
+|     Path: http://192.168.1.18:9877/idp/authorize/local?req=fjah2h7fa3sdfc2p5phcinejh4
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=fjah2h7fa3sdfc2p5phcinejh4
+
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49160/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+
+Nmap scan report for 192.168.1.19
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+1025/tcp open  msrpc         Microsoft Windows RPC
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2005 9.00.1399; RTM
+2383/tcp open  ms-olap4?
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+
+
+Nmap scan report for 192.168.1.22
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2382/tcp open  ms-olap3?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5432/tcp open  postgresql    PostgreSQL DB 9.6.0 or later
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+
+Nmap scan report for 192.168.1.23
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.23
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open(page, n_windowid, config='height=320,width=600,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|     Pages: https://192.168.1.23:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=550,width=930,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,location=yes,directories=no,status=yes')
+|     Pages: https://192.168.1.23:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=450,width=850,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|_    Pages: https://192.168.1.23:1311/oma/js/gnavbar.js
+|_http-server-header: Apache-Coyote/1.1
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49155/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49156/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49157/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+Nmap scan report for 192.168.1.25
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/rxmon?
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2008 10.00.1600; RTM
+3306/tcp  open  mysql         MySQL 5.5.16
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+| http-enum: 
+|   /backup/: Possible backup
+|   /phpinfo.php: Possible information file
+|   /phpmyadmin/: phpMyAdmin
+|   /phpMyAdmin/: phpMyAdmin
+|   /PHPMyAdmin/: phpMyAdmin
+|   /catalog/main.php?cat_id=: Catalog Builder
+|_  /catalog/: Potentially interesting folder
+| http-cookie-flags: 
+|   /catalog/main.php: 
+|     PHPSESSID: 
+|       httponly flag not set
+|   /catalog/: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.27
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           FileZilla ftpd 0.9.41 beta
+80/tcp   open  http          Apache httpd 2.4.4 ((Win32) OpenSSL/0.9.8y PHP/5.4.19)
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.27:8088/onlinelibrary/js/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.1.27:8088/onlinelibrary/js/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.1.27:8088/onlinelibrary/js/?C=M%3BO%3DA%27%20OR%20sqlspider
+|_    http://192.168.1.27:8088/onlinelibrary/js/?C=D%3BO%3DA%27%20OR%20sqlspider
+|_http-trace: TRACE is enabled
+| http-enum: 
+|   /test.php: Test page
+|   /security/xamppsecurity.php: XAMPP (401 Unauthorized)
+|_  /phpmyadmin/: phpMyAdmin
+|_http-server-header: Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.19
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      Apache httpd 2.4.4 ((Win32) OpenSSL/0.9.8y PHP/5.4.19)
+|_http-server-header: Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.19
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+1027/tcp open  msrpc         Microsoft Windows RPC
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2005 9.00.1399; RTM
+1971/tcp open  msrpc         Microsoft Windows RPC
+3306/tcp open  mysql         MySQL 5.5.32
+3389/tcp open  ms-wbt-server Microsoft Terminal Servic
+8088/tcp open  http          Apache httpd 2.4.4 ((Win32) OpenSSL/0.9.8y PHP/5.4.19)
+|_http-server-header: Apache/2.4.4 (Win32) OpenSSL/0.9.8y PHP/5.4.19
+| http-enum: 
+|   /test.php: Test page
+|   /security/xamppsecurity.php: XAMPP (401 Unauthorized)
+|   /phpmyadmin/: phpMyAdmin
+|   /app/: Potentially interesting folder
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /licenses/: Potentially interesting directory w/ listing on 'apache/2.4.4 (win32) openssl/0.9.8y php/5.4.19'
+|   /restricted/: Potentially interesting folder
+|   /security/: Potentially interesting folder (401 Unauthorized)
+|   /server-info/: Potentially interesting folder
+|   /server-status/: Potentially interesting folder
+|_  /webalizer/: Potentially interesting folder
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     IDs:  CVE:CVE-2008-4250
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|_smb-vuln-ms10-061: NT_STATUS_OBJECT_NAME_NOT_FOUND
+
+
+
+Nmap scan report for 192.168.1.28
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: ADR-GROUP)
+1311/tcp  open  ssl/rxmon?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+4899/tcp  open  radmin        Famatech Radmin 3.X (Radmin Authentication)
+5800/tcp  open  vnc-http      TightVNC (user: ssfs; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+14000/tcp open  scotty-ft?
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+
+Nmap scan report for 192.168.1.29
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 7.5
+| http-enum: 
+|   /reportserver/: Microsoft SQL Report Service (401 Unauthorized)
+|_  /reports/: Potentially interesting folder (401 Unauthorized)
+|_http-server-header: Microsoft-IIS/7.5
+111/tcp   open  rpcbind       2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100003  3           2049/tcp   nfs
+|_  100005  3           1063/tcp   mountd
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1063/tcp  open  mountd        3 (RPC #100005)
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2012 11.00.2100; RTM
+2049/tcp  open  nfs           3 (RPC #100003)
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49160/tcp open  msrpc         Microsoft Windows RPC
+
+
+Host script results:
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+
+
+
+Nmap scan report for 192.168.1.30
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-12-12 01:25:47Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: adr-group.lnet, Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+1028/tcp open  msrpc         Microsoft Windows RPC
+1029/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+1056/tcp open  msrpc         Microsoft Windows RPC
+1061/tcp open  msrpc         Microsoft Windows RPC
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: adr-group.lnet, Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+5800/tcp open  vnc-http      TightVNC (user: adserver02; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+6129/tcp open  damewaremr    DameWare Mini Remote Control
+
+
+
+
+
+Nmap scan report for 192.168.1.31
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+3128/tcp open  http    Proxmox Virtual Environment REST API 3.0
+|_http-server-header: pve-api-daemon/3.0
+
+
+Nmap scan report for 192.168.1.33
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          IBM OS/400 FTPd
+23/tcp   open  telnet       IBM OS/400 telnetd
+139/tcp  open  netbios-ssn?
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+3000/tcp open  as-sts       IBM Service Tool Server AS-STS
+
+
+
+Nmap scan report for 192.168.1.34
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: ADR-GROUP)
+1311/tcp  open  ssl/rxmon?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+4899/tcp  open  radmin        Famatech Radmin 3.X (Radmin Authentication)
+5800/tcp  open  vnc-http      TightVNC (user: ssfs; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.34
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.34:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=p2lnc2vx6ldk6jyumajmqun6ti
+|     
+|     Path: http://192.168.1.34:9877/idp/authorize/local?req=p2lnc2vx6ldk6jyumajmqun6ti
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=p2lnc2vx6ldk6jyumajmqun6ti
+14000/tcp open  scotty-ft?
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.38
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  http-proxy    sslstrip
+5900/tcp open  vnc           VNC (protocol 3.8)
+8088/tcp open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+| http-enum: 
+|_  /phpinfo.php: Possible information file
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+
+
+
+
+
+Nmap scan report for 192.168.1.41
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5.
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp   open  https?
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.41
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.41:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=6lozigqwxtkquqsvtixqnrigfa
+|     
+|     Path: http://192.168.1.41:9877/idp/authorize/local?req=6lozigqwxtkquqsvtixqnrigfa
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=6lozigqwxtkquqsvtixqnrigfa
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.4
+PORT      STATE SERVICE       VERSION
+22/tcp    open  ssh           OpenSSH 3.7.1p2 (protocol 2.0)
+80/tcp    open  http          lighttpd 1.4.32
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <html>
+|   	<head>
+|   		<meta http-equiv="refresh" content="0;url=/static/index.html">
+|   	</head>
+|   </html>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-server-header: lighttpd/1.4.32
+139/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp   open  ssl/http      lighttpd 1.4.32
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <html>
+|   	<head>
+|   		<meta http-equiv="refresh" content="0;url=/static/index.html">
+|   	</head>
+|   </html>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-server-header: lighttpd/1.4.32
+| ssl-ccs-injection: 
+|   VULNERABLE:
+|   SSL/TLS MITM vulnerability (CCS Injection)
+|     State: VULNERABLE
+|     Risk factor: High
+445/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+515/tcp   open  printer?
+873/tcp   open  rsync         (protocol version 30)
+8873/tcp  open  ssl/dxspider?
+22939/tcp open  ssl/unknown
+
+
+
+Host script results:
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+
+
+Nmap scan report for 192.168.1.45
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.45
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.45:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=jcbp5wo3fwfkm7vjbzh6sq3c2i
+|     
+|     Path: http://192.168.1.45:9877/idp/authorize/local?req=jcbp5wo3fwfkm7vjbzh6sq3c2i
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=jcbp5wo3fwfkm7vjbzh6sq3c2i
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.46
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 6.0
+|_http-server-header: Microsoft-IIS/6.0
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <br />
+|   <b>Warning</b>:  Unknown(c:\inetpub\wwwroot\phpMyAdmin-2.6.4-pl1\libraries\grab_globals.lib.php): failed to open stream: No such file or directory in <b>Unknown</b> on line <b>0</b><br />
+|   <br />
+|   <b>Warning</b>:  (null)(): Failed opening 'c:\inetpub\wwwroot\phpMyAdmin-2.6.4-pl1\libraries\grab_globals.lib.php' for inclusion (include_path='.;c:\php4\pear') in <b>Unknown</b> on line <b>0</b><br />
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows 2003 or 2008 microsoft-ds
+1025/tcp open  msrpc         Microsoft Windows RPC
+1026/tcp open  msrpc         Microsoft Windows RPC
+1027/tcp open  giop          omniORB omniNames (Corba naming service)
+1028/tcp open  msrpc         Microsoft Windows RPC
+1034/tcp open  giop          omniORB omniNames (Corba naming service)
+1145/tcp open  tcpwrapped
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2000 8.00.2039; SP4
+3389/tcp open  ms-wbt-server Microsoft Terminal Service
+4899/tcp open  radmin        Famatech Radmin
+6129/tcp open  damewaremr    DameWare Mini Remote Control
+8192/tcp open  sophos        Sophos Message Router (Interroperable Object Reference Service)
+8193/tcp open  tcpwrapped
+8194/tcp open  ssl/sophos    Sophos Message Router
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+
+
+Nmap scan report for 192.168.1.47
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          lighttpd 1.4.32
+| http-enum: 
+|_  /proxy/: Potentially interesting folder
+|_http-server-header: lighttpd/1.4.32
+139/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp   open  ssl/http      lighttpd 1.4.32
+| http-enum: 
+|_  /proxy/: Potentially interesting folder
+|_http-server-header: lighttpd/1.4.32
+445/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+873/tcp   open  rsync         (protocol version 31)
+8873/tcp  open  ssl/dxspider?
+22939/tcp open  ssl/unknow
+
+
+
+
+Nmap scan report for 192.168.1.48
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2012 11.00.2100; RTM
+2382/tcp  open  ms-olap3?
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5800/tcp  open  vnc-http      TightVNC (user: appserver07; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49163/tcp open  unknown
+
+
+
+Nmap scan report for 192.168.1.50
+PORT     STATE SERVICE      VERSION
+21/tcp   open  ftp          IBM OS/400 FTPd
+23/tcp   open  telnet       IBM OS/400 telnetd
+139/tcp  open  netbios-ssn?
+445/tcp  open  microsoft-ds
+515/tcp  open  printer
+3000/tcp open  as-sts       IBM Service Tool Server AS-STS
+
+
+
+Nmap scan report for 192.168.1.51
+PORT      STATE SERVICE       VERSION
+88/tcp    open  kerberos-sec  Microsoft Windows Kerberos (server time: 2025-12-12 01:02:08Z)
+111/tcp   open  rpcbind       2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/tcp6  rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  2,3,4        111/udp6  rpcbind
+|   100003  2,3         2049/tcp   nfs
+|   100003  2,3         2049/tcp6  nfs
+|   100003  2,3         2049/udp   nfs
+|   100003  2,3         2049/udp6  nfs
+|   100005  1,2,3       1048/tcp   mountd
+|   100005  1,2,3       1048/tcp6  mountd
+|   100005  1,2,3       1048/udp   mountd
+|   100005  1,2,3       1048/udp6  mountd
+|   100021  1,2,3,4     1047/tcp   nlockmgr
+|   100021  1,2,3,4     1047/tcp6  nlockmgr
+|   100021  1,2,3,4     1047/udp   nlockmgr
+|   100021  1,2,3,4     1047/udp6  nlockmgr
+|   100024  1           1039/tcp   status
+|   100024  1           1039/tcp6  status
+|   100024  1           1039/udp   status
+|_  100024  1           1039/udp6  status
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp   open  ldap          Microsoft Windows Active Directory LDAP (Domain: aai.lnet, Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: AAI)
+464/tcp   open  kpasswd5?
+593/tcp   open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped
+1039/tcp  open  status        1 (RPC #100024)
+1047/tcp  open  nlockmgr      1-4 (RPC #100021)
+1048/tcp  open  mountd        1-3 (RPC #100005)
+2049/tcp  open  nfs           2-3 (RPC #100003)
+3268/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: aai.lnet, Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5800/tcp  open  vnc-http      TightVNC (user: aai_svr; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.51
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.51:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=qbqjylekgatsq5jaktzvzhugj4
+|     
+|     Path: http://192.168.1.51:9877/idp/authorize/local?req=qbqjylekgatsq5jaktzvzhugj4
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=qbqjylekgatsq5jaktzvzhugj4
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+49158/tcp open  msrpc         Microsoft Windows RPC
+
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+
+
+Nmap scan report for 192.168.1.52
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  vnc-http      TightVNC (user: itd-cpu-000455; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+8088/tcp open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+|_http-trace: TRACE is enabled
+
+
+
+Nmap scan report for 192.168.1.54
+PORT      STATE SERVICE       VERSION
+111/tcp   open  rpcbind
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: AAI)
+1039/tcp  open  status        1 (RPC #100024)
+1047/tcp  open  nlockmgr      1-4 (RPC #100021)
+1048/tcp  open  mountd        1-3 (RPC #100005)
+2049/tcp  open  nfs           2-3 (RPC #100003)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5800/tcp  open  http-proxy    sslstrip
+5900/tcp  open  vnc           VNC (protocol 3.8)
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.54
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.54:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=zuyoof6verven3iiatoqrkoquu
+|     
+|     Path: http://192.168.1.54:9877/idp/authorize/local?req=zuyoof6verven3iiatoqrkoquu
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=zuyoof6verven3iiatoqrkoquu
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+
+
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+
+Nmap scan report for 192.168.1.55
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+| http-enum: 
+|_  /phpinfo.php: Possible information file
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+
+Nmap scan report for 192.168.1.57
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.57
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open(url, windowtitle, 'width=' + popwidth + ',height=' + popheight + ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=yes')
+|     Pages: https://192.168.1.57:1311/oma/js/Clarity.js
+|     
+|     Source: window.open(page, n_windowid, config='height=320,width=600,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|     Pages: https://192.168.1.57:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=550,width=930,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,location=yes,directories=no,status=yes')
+|     Pages: https://192.168.1.57:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=450,width=850,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|_    Pages: https://192.168.1.57:1311/oma/js/gnavbar.js
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49155/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49156/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49157/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+
+Nmap scan report for 192.168.1.59
+PORT     STATE SERVICE       VERSION
+21/tcp   open  ftp           FileZilla ftpd 0.9.41 beta
+25/tcp   open  smtp          Mercury/32 smtpd (Mail server account Maiser)
+79/tcp   open  finger        Mercury/32 fingerd
+80/tcp   open  http          Apache httpd 2.4.53 ((Win64) OpenSSL/1.1.1n PHP/7.4.29)
+|_http-server-header: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/7.4.29
+106/tcp  open  pop3pw        Mercury/32 poppass service
+110/tcp  open  pop3          Mercury/32 pop3d
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open  imap          Mercury/32 imapd 4.62
+443/tcp  open  ssl/http      Apache httpd 2.4.53 (OpenSSL/1.1.1n PHP/7.4.29)
+|_http-server-header: Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/7.4.29
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql         MariaDB 5.5.5-10.4.24
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  vnc-http      TightVNC (user: itd-cpu-000827; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+
+
+
+Nmap scan report for 192.168.1.65
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+| http-enum: 
+|   /: Root directory w/ directory listing
+|   /catalog/main.php?cat_id=: Catalog Builder
+|_  /catalog/: Potentially interesting folder
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49157/tcp open  msrpc         Microsoft Windows RPC
+49159/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+
+Nmap scan report for 192.168.1.73
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+111/tcp  open  rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+3128/tcp open  http    Proxmox Virtual Environment REST API 3.0
+|_http-server-header: pve-api-daemon/3.0
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+
+
+
+
+Nmap scan report for 192.168.1.75
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          nginx
+139/tcp  open  netbios-ssn?
+443/tcp  open  ssl/http      nginx
+445/tcp  open  microsoft-ds?
+5000/tcp open  http          nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.75:5000/webapi/entry.cgi?v=1755678897%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.75:5000/webapi/entry.cgi?v=1755678897&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5001/tcp open  ssl/http      nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://192.168.1.75:5001/webapi/entry.cgi?v=1755678897%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    https://192.168.1.75:5001/webapi/entry.cgi?v=1755678897&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5357/tcp open  http          nginx
+
+
+
+Nmap scan report for 192.168.1.78
+PORT     STATE SERVICE        VERSION
+135/tcp  open  msrpc          Microsoft Windows RPC
+139/tcp  open  netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5357/tcp open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  vnc-http       TightVNC (user: itd-cpu-000967; VNC TCP port: 5900)
+5900/tcp open  vnc            VNC (protocol 3.8)
+6002/tcp open  X11:2?
+7001/tcp open  afs3-callback?
+7002/tcp open  http           SafeNet Sentinel Keys License Monitor httpd 1.3.5 (Java Console)
+9999/tcp open  http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 192.168.1.80
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds (workgroup: ADR-GROUP)
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.80
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open(url, windowtitle, 'width=' + popwidth + ',height=' + popheight + ',toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,copyhistory=no,resizable=yes')
+|     Pages: https://192.168.1.80:1311/oma/js/Clarity.js
+|     
+|     Source: window.open(page, n_windowid, config='height=320,width=600,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|     Pages: https://192.168.1.80:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=550,width=930,scrollbars=yes,toolbar=yes,menubar=yes,resizable=yes,location=yes,directories=no,status=yes')
+|     Pages: https://192.168.1.80:1311/oma/js/gnavbar.js
+|     
+|     Source: window.open(page, windowid, config='height=450,width=850,scrollbars=yes,toolbar=no,menubar=no,resizable=yes,location=no,directories=no,status=no')
+|_    Pages: https://192.168.1.80:1311/oma/js/gnavbar.js
+|_http-server-header: Apache-Coyote/1.1
+| http-enum: 
+|   /manager/html/upload: Apache Tomcat (401 Unauthorized)
+|_  /manager/html: Apache Tomcat (401 Unauthorized)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.80
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.80:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=jt3kr23fvqn4xtf43yk7geioyu
+|     
+|     Path: http://192.168.1.80:9877/idp/authorize/local?req=jt3kr23fvqn4xtf43yk7geioyu
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=jt3kr23fvqn4xtf43yk7geioyu
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+
+
+Nmap scan report for 192.168.1.82
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+6129/tcp  open  damewaremr    DameWare Mini Remote Control
+9876/tcp  open  sd?
+9877/tcp  open  ssl/http      Golang net/http server
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.82
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.82:9877/
+|     Form id: login_username
+|     Form action: /idp/authorize/local?req=2czbwcgucj7gpemxgenppzkixq
+|     
+|     Path: http://192.168.1.82:9877/idp/authorize/local?req=2czbwcgucj7gpemxgenppzkixq
+|     Form id: login_username
+|_    Form action: /idp/authorize/local?req=2czbwcgucj7gpemxgenppzkixq
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+
+
+
+Nmap scan report for 192.168.1.83
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+5800/tcp open  vnc-http      TightVNC (user: itd-cpu-000582; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+5985/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+
+
+Nmap scan report for 192.168.1.84
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+5432/tcp open  postgresql PostgreSQL DB 14.1 - 14.6
+
+
+Nmap scan report for 192.168.1.85
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          nginx
+139/tcp  open  netbios-ssn?
+443/tcp  open  ssl/http      nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+445/tcp  open  microsoft-ds?
+3261/tcp open  iscsi         Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open  http          nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.85:5000/webapi/entry.cgi?v=1755741141%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.85:5000/webapi/entry.cgi?v=1755741141&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+| http-enum: 
+|_  /robots.txt: Robots file
+5001/tcp open  ssl/http      nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://192.168.1.85:5001/webapi/entry.cgi?v=1755741141%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    https://192.168.1.85:5001/webapi/entry.cgi?v=1755741141&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+| http-enum: 
+|_  /robots.txt: Robots file
+5357/tcp open  http          nginx
+
+
+
+Nmap scan report for 192.168.1.90
+PORT     STATE SERVICE           VERSION
+80/tcp   open  http              nginx
+111/tcp  open  rpcbind           2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  2,3         2049/tcp   nfs
+|   100003  2,3         2049/tcp6  nfs
+|   100003  2,3         2049/udp   nfs
+|   100003  2,3         2049/udp6  nfs
+|   100005  1,2,3        892/tcp   mountd
+|   100005  1,2,3        892/tcp6  mountd
+|   100005  1,2,3        892/udp   mountd
+|   100005  1,2,3        892/udp6  mountd
+|   100021  1,3,4       4045/tcp   nlockmgr
+|   100021  1,3,4       4045/tcp6  nlockmgr
+|   100021  1,3,4       4045/udp   nlockmgr
+|   100021  1,3,4       4045/udp6  nlockmgr
+|   100024  1            662/tcp   status
+|   100024  1            662/tcp6  status
+|   100024  1            662/udp   status
+|_  100024  1            662/udp6  status
+139/tcp  open  netbios-ssn       Samba smbd 4
+443/tcp  open  ssl/http          nginx
+445/tcp  open  netbios-ssn       Samba smbd 4
+2049/tcp open  nfs               2-3 (RPC #100003)
+3261/tcp open  iscsi             Synology DSM Snapshot Replication iSCSI LUN
+4045/tcp open  nlockmgr          1-4 (RPC #100021)
+5000/tcp open  http              nginx
+5001/tcp open  ssl/http          nginx
+5357/tcp open  http              nginx
+5510/tcp open  secureidprop?
+5566/tcp open  synobtrfsreplicad Synology Snapshot Replication shared folder
+
+
+Nmap scan report for 192.168.1.91
+PORT     STATE SERVICE           VERSION
+22/tcp   open  ssh               OpenSSH 8.2 (protocol 2.0)
+80/tcp   open  http              nginx
+139/tcp  open  netbios-ssn       Samba smbd 4
+443/tcp  open  ssl/http          nginx
+445/tcp  open  netbios-ssn       Samba smbd 4
+3261/tcp open  iscsi             Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open  http              nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.91:5000/webapi/entry.cgi?v=1737355918%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.91:5000/webapi/entry.cgi?v=1737355918&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5001/tcp open  ssl/http          nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://192.168.1.91:5001/webapi/entry.cgi?v=1737355918%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    https://192.168.1.91:5001/webapi/entry.cgi?v=1737355918&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5357/tcp open  http              nginx
+5566/tcp open  synobtrfsreplicad Synology Snapshot Replication shared folder
+7000/tcp open  http              nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.91:7000/webapi/entry.cgi?v=1737355918%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.91:7000/webapi/entry.cgi?v=1737355918&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+8000/tcp open  http              nginx
+
+
+Nmap scan report for 192.168.1.99
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware Server http config
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware ESXi Web UI
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| vmware-version: 
+|   Server version: VMware ESXi 6.5.0
+|   Build: 5969303
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+| http-enum: 
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+Nmap scan report for 192.168.1.110
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware Server http config
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx.
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+
+Nmap scan report for 192.168.1.112
+PORT     STATE SERVICE        VERSION
+80/tcp   open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-enum: 
+|   /reportserver/: Microsoft SQL Report Service (401 Unauthorized)
+|_  /reports/: Potentially interesting folder (401 Unauthorized)
+135/tcp  open  msrpc          Microsoft Windows RPC
+139/tcp  open  netbios-ssn    Microsoft Windows netbios-ssn
+1433/tcp open  ms-sql-s       Microsoft SQL Server 2016 13.00.4001; SP1
+2383/tcp open  ms-olap4?
+3389/tcp open  ms-wbt-server?
+5985/tcp open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+Nmap scan report for 192.168.1.123
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           ProFTPD
+22/tcp    open  ssh           OpenSSH 3.7.1p2 (protocol 2.0)
+80/tcp    open  http          lighttpd 1.4.23
+|_http-server-header: lighttpd/1.4.23
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <html>
+|   	<head>
+|   		<meta http-equiv="refresh" content="0;url=/static/index.html">
+|   	</head>
+|   </html>
+|   
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+139/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp   open  ssl/http      lighttpd 1.4.23
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <html>
+|   	<head>
+|   		<meta http-equiv="refresh" content="0;url=/static/index.html">
+|   	</head>
+|   </html>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-server-header: lighttpd/1.4.23
+445/tcp   open  netbios-ssn   Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+873/tcp   open  rsync         (protocol version 30)
+8873/tcp  open  ssl/dxspider?
+22939/tcp open  ssl/unknown
+
+
+
+Nmap scan report for 192.168.1.130
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware Server http config
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+
+
+Nmap scan report for 192.168.1.131
+PORT     STATE SERVICE         VERSION
+135/tcp  open  msrpc           Microsoft Windows RPC
+139/tcp  open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+3389/tcp open  ms-wbt-server   Microsoft Terminal Services
+5800/tcp open  vnc-http        TightVNC (user: adr-siemens_svr; VNC TCP port: 5900)
+5900/tcp open  vnc             VNC (protocol 3.8)
+7070/tcp open  ssl/realserver?
+9876/tcp open  sd?
+
+
+
+
+Nmap scan report for 192.168.1.133
+PORT      STATE    SERVICE      VERSION
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+1110/tcp  filtered nfsd-status
+2869/tcp  filtered icslap
+5800/tcp  open     vnc-http     TightVNC (user: adr-siemens_svr; VNC TCP port: 5900)
+5900/tcp  open     vnc          VNC (protocol 3.8)
+
+
+Nmap scan report for 192.168.1.150
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.2 (protocol 2.0)
+80/tcp   open  http        nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+139/tcp  open  netbios-ssn Samba smbd 4
+443/tcp  open  ssl/http    nginx
+445/tcp  open  netbios-ssn Samba smbd 4
+3261/tcp open  iscsi       Synology DSM Snapshot Replication iSCSI LUN
+5001/tcp open  ssl/http    nginx
+5357/tcp open  http        nginx
+
+
+
+Nmap scan report for 192.168.1.151
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+139/tcp  open  netbios-ssn   Samba smbd 4
+443/tcp  open  ssl/http      nginx
+445/tcp  open  netbios-ssn   Samba smbd 4
+548/tcp  open  afp           Netatalk 3.1.12 (name: NAS-BACKUP-DB02; protocol 3.4)
+3261/tcp open  iscsi         Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open  http          nginx
+5001/tcp open  ssl/http      nginx
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-sql-injection: 
+|   Possible sqli for queries:
+|_    https://192.168.1.151:5001/webapi/entry.cgi?v=1737354915%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+5357/tcp open  http          nginx
+5510/tcp open  secureidprop?
+
+
+Nmap scan report for 192.168.1.152
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+111/tcp  open  rpcbind       2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  2,3         2049/udp   nfs
+|   100003  2,3         2049/udp6  nfs
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100005  1,2,3        892/tcp   mountd
+|   100005  1,2,3        892/tcp6  mountd
+|   100005  1,2,3        892/udp   mountd
+|   100005  1,2,3        892/udp6  mountd
+|   100021  1,3,4       4045/tcp   nlockmgr
+|   100021  1,3,4       4045/tcp6  nlockmgr
+|   100021  1,3,4       4045/udp   nlockmgr
+|   100021  1,3,4       4045/udp6  nlockmgr
+|   100024  1            662/tcp   status
+|   100024  1            662/tcp6  status
+|   100024  1            662/udp   status
+|_  100024  1            662/udp6  status
+139/tcp  open  netbios-ssn   Samba smbd 4
+443/tcp  open  ssl/http      nginx
+445/tcp  open  netbios-ssn   Samba smbd 4
+548/tcp  open  afp           Netatalk 3.1.12 (name: NAS_BACKUP_DB01; protocol 3.4)
+2049/tcp open  nfs           2-4 (RPC #100003)
+3261/tcp open  iscsi         Synology DSM Snapshot Replication iSCSI LUN
+4045/tcp open  nlockmgr      1-4 (RPC #100021)
+5000/tcp open  http          nginx
+5001/tcp open  ssl/http      nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://192.168.1.152:5001/webapi/entry.cgi?v=1743996690%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    https://192.168.1.152:5001/webapi/entry.cgi?v=1743996690&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5357/tcp open  http          nginx
+5510/tcp open  secureidprop?
+
+
+Nmap scan report for 192.168.1.160
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware ESXi Server httpd
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+
+
+Nmap scan report for 192.168.1.161
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+1947/tcp open  http          Aladdin/SafeNet HASP license manager 24.04
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  vnc-http      TightVNC (user: mastercam_lic_v; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+
+
+Nmap scan report for 192.168.1.180
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+23/tcp  open  telnet     TP-LINK TL-SG2008 telnetd
+80/tcp  open  http       Web Switch
+443/tcp open  ssl/https  Web Switch
+
+
+Nmap scan report for 192.168.1.181
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     GoAhead WebServer
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.181
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.181:80/
+|     Form id: signinform
+|     Form action: ./login.htm
+|     
+|     Path: http://192.168.1.181:80/login.htm
+|     Form id: signinform
+|_    Form action: ./login.htm
+|_http-server-header: GoAhead-Webs
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+443/tcp open  ssl/http GoAhead WebServer
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.181
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://192.168.1.181:443/
+|     Form id: signinform
+|     Form action: ./login.htm
+|     
+|     Path: https://192.168.1.181:443/login.htm
+|     Form id: signinform
+|_    Form action: ./login.htm
+
+
+
+Nmap scan report for 192.168.1.182
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     GoAhead WebServer
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.182
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: https://192.168.1.182:443/
+|     Form id: signinform
+|_    Form action: ./login.htm
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+
+
+Nmap scan report for 192.168.1.200
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+3000/tcp open  http       Grafana http
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+| http-enum: 
+|   /login/: Login page
+|   /robots.txt: Robots file
+|   /api/: Potentially interesting folder (401 Unauthorized)
+|_  /api-docs/: Potentially interesting folder (401 Unauthorized)
+5432/tcp open  postgresql PostgreSQL DB 12.9 - 12.13
+8083/tcp open  http       Cowboy httpd
+|_http-server-header: Cowboy
+8084/tcp open  ssl/http   Cowboy httpd
+|_http-server-header: Cowboy
+
+
+Nmap scan report for 192.168.1.201
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001; SP1
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+
+
+
+Nmap scan report for 192.168.1.202
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+1433/tcp open  ms-sql-s Microsoft SQL Server 2019 15.00.4223
+
+
+
+Nmap scan report for 192.168.1.228
+Host is up (0.023s latency).
+Not shown: 982 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+2382/tcp  open  ms-olap3?
+3306/tcp  open  mysql         MySQL 5.5.16
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+4899/tcp  open  radmin        Famatech Radmin 3.X (Radmin Authentication)
+5800/tcp  open  vnc-http      TightVNC (user: svrmangatur; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49160/tcp open  msrpc         Microsoft Windows RPC
+49161/tcp open  msrpc         Microsoft Windows RPC
+
+
+Nmap scan report for 192.168.1.236
+PORT    STATE SERVICE    VERSION
+22/tcp  open  tcpwrapped
+23/tcp  open  telnet     TP-LINK TL-SG2008 telnetd
+80/tcp  open  http       Liaison Exchange Commerce Suite
+443/tcp open  ssl/https?
+
+
+
+Nmap scan report for 192.168.1.238
+PORT   STATE SERVICE VERSION
+80/tcp open  http    GoAhead WebServer (LinkSys SLM2024 or SRW2008 - SRW2016 switch http config)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.1.238
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.1.238:80/config/log_off_page.htm
+|     Form id: mainpageform
+|_    Form action: /config/log_off_page.htm
+
+
+Nmap scan report for 192.168.1.239
+PORT      STATE SERVICE     VERSION
+80/tcp    open  http        lighttpd 1.4.32
+| http-enum: 
+|_  /proxy/: Potentially interesting folder
+|_http-server-header: lighttpd/1.4.32
+443/tcp   open  ssl/http    lighttpd 1.4.32
+873/tcp   open  rsync       (protocol version 31)
+8873/tcp  open  dxspider?
+9050/tcp  open  upnp        TwonkyMedia UPnP (UPnP 1.0; pvConnect SDK 1.0; Twonky SDK 1.1)
+22939/tcp open  ssl/unknown
+
+
+
+Nmap scan report for 192.168.1.240
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+139/tcp  open  netbios-ssn Samba smbd 4
+443/tcp  open  ssl/http    nginx
+445/tcp  open  netbios-ssn Samba smbd 4
+3261/tcp open  iscsi       Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open  http        nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.240:5000/webapi/entry.cgi?v=1756175080%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.240:5000/webapi/entry.cgi?v=1756175080&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5001/tcp open  ssl/http    nginx
+5357/tcp open  http        nginx
+
+
+
+
+Nmap scan report for 192.168.1.243
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 8.2 (protocol 2.0)
+80/tcp   open  http        nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+139/tcp  open  netbios-ssn Samba smbd 4
+443/tcp  open  ssl/http    nginx
+445/tcp  open  netbios-ssn Samba smbd 4
+3261/tcp open  iscsi       Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open  http        nginx
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.1.246:5000/webapi/entry.cgi?v=1720432310%27%20OR%20sqlspider&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1
+|_    http://192.168.1.246:5000/webapi/entry.cgi?v=1720432310&api=SYNO.Core.Desktop.UIString&lang=enu&method=getjs&version=1%27%20OR%20sqlspider
+5001/tcp open  ssl/http    nginx
+5357/tcp open  http        nginx
+
+Nmap scan report for 192.168.1.252
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware Server http config
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+|_http-server-header: gSOAP/2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/

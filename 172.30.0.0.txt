@@ -1,0 +1,1534 @@
+Nmap scan report for 172.30.0.7
+PORT     STATE    SERVICE        VERSION
+21/tcp   filtered ftp
+443/tcp  filtered https
+445/tcp  filtered microsoft-ds
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+1025/tcp filtered NFS-or-IIS
+2000/tcp open     bandwidth-test MikroTik bandwidth-test server
+8888/tcp filtered sun-answerbook
+
+
+Nmap scan report for 172.30.0.10
+PORT     STATE    SERVICE        VERSION
+22/tcp   filtered ssh
+113/tcp  filtered ident
+139/tcp  filtered netbios-ssn
+161/tcp  open     snmp?
+199/tcp  filtered smux
+8888/tcp filtered sun-answerbook
+
+
+Nmap scan report for 172.30.0.14
+PORT      STATE    SERVICE        VERSION
+22/tcp    filtered ssh
+80/tcp    open     http           TP-LINK WA901ND WAP http config
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <body><script language="javaScript">window.parent.document.cookie="Authorization=;path=/";
+|   window.parent.location.href = "http://172.30.0.14";
+|   </script></body></html>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=172.30.0.14
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://172.30.0.14:80/
+|     Form id: loginform
+|     Form action: /userRpm/LoginRpm.htm
+|     
+|     Path: http://172.30.0.14:80/userRpm/LoginRpm.htm
+|     Form id: loginform
+|_    Form action: /userRpm/LoginRpm.htm
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+|_http-server-header: Router Webserver
+995/tcp   filtered pop3s
+8888/tcp  filtered sun-answerbook
+49152/tcp open     http           Huawei HG8245T modem http config
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+
+
+Nmap scan report for 172.30.0.20
+PORT     STATE  SERVICE         VERSION
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware ESXi Web UI
+| vmware-version: 
+|   Server version: VMware ESXi 6.5.0
+|   Build: 5969303
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+2020/tcp closed xinupageserver
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+
+Nmap scan report for 172.30.0.31
+PORT     STATE    SERVICE          VERSION
+22/tcp   open     ssh              Dropbear sshd 2022.83 (protocol 2.0)
+53/tcp   filtered domain
+143/tcp  filtered imap
+161/tcp  open     snmp?
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+1720/tcp filtered h323q931
+8080/tcp filtered http-proxy
+
+
+Nmap scan report for 172.30.0.40
+PORT     STATE  SERVICE         VERSION
+427/tcp  open   svrloc?
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+
+Nmap scan report for 172.30.0.41
+PORT     STATE  SERVICE         VERSION
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-server-header: gSOAP/2.8
+
+
+Nmap scan report for 172.30.0.43
+PORT     STATE    SERVICE        VERSION
+22/tcp   open     ssh            OpenSSH 8.4 (protocol 2.0)
+111/tcp  open     rpcbind        2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+113/tcp  filtered ident
+143/tcp  filtered imap
+995/tcp  filtered pop3s
+1723/tcp filtered pptp
+3389/tcp filtered ms-wbt-server
+8000/tcp open     http           SAP WebDispatcher
+8888/tcp filtered sun-answerbook
+
+
+Nmap scan report for 172.30.0.44
+PORT    STATE    SERVICE          VERSION
+21/tcp  filtered ftp
+22/tcp  open     ssh              Dropbear sshd 2024.86 (protocol 2.0)
+23/tcp  filtered telnet
+113/tcp filtered ident
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+143/tcp filtered imap
+161/tcp open     snmp?
+199/tcp filtered smux
+256/tcp filtered fw1-secureremote
+995/tcp filtered pop3s
+
+
+Nmap scan report for 172.30.0.46
+PORT     STATE    SERVICE          VERSION
+22/tcp   open     ssh              OpenSSH 7.1 (protocol 2.0)
+80/tcp   open     http             mini_httpd
+| http-enum: 
+|   /core/: Potentially interesting folder w/ directory listing
+|_  /custom/: Potentially interesting folder w/ directory listing
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+443/tcp  open     ssl/http         mini_httpd
+995/tcp  filtered pop3s
+1723/tcp filtered pptp
+3389/tcp filtered ms-wbt-server
+4343/tcp open     ssl/http         mini_httpd
+| http-enum: 
+|   /auth/: Potentially interesting folder
+|_  /core/: Potentially interesting folder w/ directory listing
+8080/tcp open     http-proxy       tinyproxy 1.8.2
+|_http-server-header: tinyproxy/1.8.2
+8888/tcp filtered sun-answerbook
+
+
+Nmap scan report for 172.30.0.47
+PORT     STATE    SERVICE          VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+53/tcp   filtered domain
+111/tcp  filtered rpcbind
+135/tcp  filtered msrpc
+161/tcp  open     snmp?
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+1025/tcp filtered NFS-or-IIS
+3389/tcp filtered ms-wbt-server
+
+
+
+Nmap scan report for 172.30.0.48
+PORT     STATE    SERVICE      VERSION
+22/tcp   open     ssh          Dropbear sshd 2022.83 (protocol 2.0)
+23/tcp   filtered telnet
+43/tcp   filtered whois
+53/tcp   filtered domain
+143/tcp  filtered imap
+161/tcp  open     snmp?
+445/tcp  filtered microsoft-ds
+993/tcp  filtered imaps
+1025/tcp filtered NFS-or-IIS
+4446/tcp filtered n1-fwp
+
+
+
+Nmap scan report for 172.30.0.49
+PORT     STATE    SERVICE          VERSION
+22/tcp   filtered ssh
+80/tcp   open     http             mini_httpd
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+143/tcp  filtered imap
+256/tcp  filtered fw1-secureremote
+443/tcp  open     ssl/http         mini_httpd
+554/tcp  filtered rtsp
+4343/tcp open     ssl/http         mini_httpd
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=172.30.0.49
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open("","results","width=640,height=480,menubar=1,toolbar=1,location=1,directories=1,status=1,scrollbars=1,resizable=1")
+|     Pages: http://172.30.0.49:4343/jscripts/application-compiled.js
+|     
+|     Source: window.open("","","width=640,height=480,menubar=1,toolbar=1,location=1,directories=1,status=1,scrollbars=1,resizable=1")
+|_    Pages: http://172.30.0.49:4343/jscripts/application-compiled.js
+8080/tcp open     http-proxy       tinyproxy 1.8.2
+|_http-server-header: tinyproxy/1.8.2
+
+
+Nmap scan report for 172.30.0.53
+PORT     STATE    SERVICE VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+53/tcp   filtered domain
+161/tcp  open     snmp?
+199/tcp  filtered smux
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+1723/tcp filtered pptp
+
+
+
+Nmap scan report for 172.30.0.65
+PORT     STATE    SERVICE          VERSION
+21/tcp   filtered ftp
+22/tcp   open     ssh              Dropbear sshd 2022.83 (protocol 2.0)
+113/tcp  filtered ident
+161/tcp  open     snmp?
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+1025/tcp filtered NFS-or-IIS
+1720/tcp filtered h323q931
+8888/tcp filtered sun-answerbook
+
+
+Nmap scan report for 172.30.0.7
+PORT     STATE    SERVICE VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+1723/tcp filtered pptp
+
+
+Nmap scan report for 172.30.0.80
+PORT     STATE    SERVICE          VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+53/tcp   filtered domain
+135/tcp  filtered msrpc
+139/tcp  open     netbios-ssn      Microsoft Windows netbios-ssn
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+3389/tcp filtered ms-wbt-server
+5357/tcp open     http             Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http         TightVNC (user: itd-com-000243; VNC TCP port: 5900)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+5900/tcp open     vnc              VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+Aggressive OS guesses: Microsoft Windows 10 1809 (97%), Microsoft Windows 10 1909 (97%), Microsoft Windows 10 20H2 or Windows 11 21H2 (94%), Microsoft Windows 10 1709 - 21H2 (94%), Microsoft Windows Longhorn (93%), Microsoft Windows Server 2008 SP2 or Windows 10 or Xbox One (91%), Microsoft Windows 10 20H2 (91%), Microsoft Windows 10 20H2 - 21H1 (91%), Microsoft Windows 10 21H2 (91%), Microsoft Windows Server 2008 SP2 (91%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=241 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+TRACEROUTE (using port 43/tcp)
+HOP RTT      ADDRESS
+-   Hop 1 is the same as for 172.30.0.141
+2   97.24 ms 172.30.0.80
+
+Nmap scan report for 172.30.0.81
+Host is up (0.016s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT     STATE    SERVICE        VERSION
+22/tcp   filtered ssh
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+161/tcp  open     snmp?
+8888/tcp filtered sun-answerbook
+Device type: switch|broadband router|specialized|WAP|general purpose|webcam
+
+
+Nmap scan report for 172.30.0.86
+PORT     STATE    SERVICE          VERSION
+22/tcp   open     ssh              OpenSSH 8.4 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:8.4: 
+|     	PACKETSTORM:173661	9.8	https://vulners.com/packetstorm/PACKETSTORM:173661	*EXPLOIT*
+|     	F0979183-AE88-53B4-86CF-3AF0523F3807	9.8	https://vulners.com/githubexploit/F0979183-AE88-53B4-86CF-3AF0523F3807	*EXPLOIT*
+|     	CVE-2023-38408	9.8	https://vulners.com/cve/CVE-2023-38408
+|     	B8190CDB-3EB9-5631-9828-8064A1575B23	9.8	https://vulners.com/githubexploit/B8190CDB-3EB9-5631-9828-8064A1575B23	*EXPLOIT*
+|     	8FC9C5AB-3968-5F3C-825E-E8DB5379A623	9.8	https://vulners.com/githubexploit/8FC9C5AB-3968-5F3C-825E-E8DB5379A623	*EXPLOIT*
+|     	8AD01159-548E-546E-AA87-2DE89F3927EC	9.8	https://vulners.com/githubexploit/8AD01159-548E-546E-AA87-2DE89F3927EC	*EXPLOIT*
+|     	2227729D-6700-5C8F-8930-1EEAFD4B9FF0	9.8	https://vulners.com/githubexploit/2227729D-6700-5C8F-8930-1EEAFD4B9FF0	*EXPLOIT*
+|     	0221525F-07F5-5790-912D-F4B9E2D1B587	9.8	https://vulners.com/githubexploit/0221525F-07F5-5790-912D-F4B9E2D1B587	*EXPLOIT*
+|     	BA3887BD-F579-53B1-A4A4-FF49E953E1C0	8.1	https://vu                                                              
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+143/tcp  filtered imap
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+1723/tcp filtered pptp
+3300/tcp open     ceph?
+
+
+Nmap scan report for 172.30.0.92
+PORT      STATE    SERVICE         VERSION
+25/tcp    filtered smtp
+113/tcp   filtered ident
+135/tcp   open     msrpc           Microsoft Windows RPC
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+143/tcp   filtered imap
+445/tcp   open     microsoft-ds    Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+548/tcp   filtered afp
+995/tcp   filtered pop3s
+1043/tcp  filtered boinc
+1048/tcp  filtered neod2
+1723/tcp  filtered pptp
+1900/tcp  filtered upnp
+2041/tcp  filtered interbase
+2048/tcp  filtered dls-monitor
+2190/tcp  filtered tivoconnect
+2393/tcp  filtered ms-olap1
+2725/tcp  filtered msolap-ptp2
+2869/tcp  open     tcpwrapped
+3389/tcp  filtered ms-wbt-server
+5405/tcp  filtered pcduo
+5800/tcp  open     http-proxy      sslstrip
+5801/tcp  filtered vnc-http-1
+5822/tcp  filtered unknown
+5900/tcp  filtered vnc
+7512/tcp  filtered unknown
+8010/tcp  filtered xmpp
+8200/tcp  filtered trivnet1
+8888/tcp  filtered sun-answerbook
+9999/tcp  open     http            Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+10012/tcp filtered unknown
+32779/tcp filtered sometimes-rpc21
+48080/tcp filtered unknown
+
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+
+
+
+
+Nmap scan report for 172.30.0.94
+PORT     STATE    SERVICE       VERSION
+22/tcp   open     ssh           Dropbear sshd 2022.83 (protocol 2.0)
+111/tcp  filtered rpcbind
+139/tcp  filtered netbios-ssn
+161/tcp  open     snmp?
+554/tcp  filtered rtsp
+993/tcp  filtered imaps
+1720/tcp filtered h323q931
+3389/tcp filtered ms-wbt-server
+8080/tcp filtered http-proxy
+
+
+
+
+Nmap scan report for 172.30.0.98
+PORT      STATE    SERVICE       VERSION
+135/tcp   open     msrpc         Microsoft Windows RPC
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+5800/tcp  open     vnc-http      TightVNC (user: itd-com-000533; VNC TCP port: 5900)
+5900/tcp  open     vnc           VNC (protocol 3.8)
+9999/tcp  open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.103
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5800/tcp open  vnc-http      TightVNC (user: itd-com-000067; VNC TCP port: 5900)
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+5900/tcp open  vnc           VNC (protocol 3.8)
+9999/tcp open  http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.107
+PORT      STATE    SERVICE      VERSION
+22/tcp    filtered ssh
+135/tcp   open     msrpc        Microsoft Windows RPC
+139/tcp   open     netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: ADR-GROUP)
+2869/tcp  open     http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+4899/tcp  open     radmin       Famatech Radmin 3.X (Radmin Authentication)
+5050/tcp  open     mmcc?
+5800/tcp  open     http-proxy   sslstrip
+5900/tcp  open     vnc          VNC (protocol 3.8)
+6129/tcp  open     damewaremr   DameWare Mini Remote Control
+9999/tcp  open     http         Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+49152/tcp open     msrpc        Microsoft Windows RPC
+49153/tcp open     msrpc        Microsoft Windows RPC
+49154/tcp open     msrpc        Microsoft Windows RPC
+49158/tcp open     msrpc        Microsoft Windows RPC
+49160/tcp open     msrpc        Microsoft Windows RPC
+49161/tcp open     msrpc        Microsoft Windows RPC
+
+
+
+Nmap scan report for 172.30.0.112
+PORT     STATE    SERVICE          VERSION
+22/tcp   filtered ssh
+113/tcp  filtered ident
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+1720/tcp filtered h323q931
+1723/tcp filtered pptp
+5800/tcp open     http-proxy       sslstrip
+5900/tcp open     vnc              VNC (protocol 3.8)
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.113
+Host is up (0.019s latency).
+Not shown: 989 closed tcp ports (reset)
+PORT     STATE    SERVICE       VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+113/tcp  filtered ident
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+199/tcp  filtered smux
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000286; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.114
+PORT     STATE    SERVICE     VERSION
+53/tcp   filtered domain
+135/tcp  open     tcpwrapped
+139/tcp  filtered netbios-ssn
+445/tcp  open     tcpwrapped
+1720/tcp filtered h323q931
+5800/tcp open     tcpwrapped
+5900/tcp open     tcpwrapped
+8080/tcp filtered http-proxy
+9999/tcp open     tcpwrapped
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+
+Nmap scan report for 172.30.0.116
+PORT     STATE    SERVICE          VERSION
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+199/tcp  filtered smux
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+995/tcp  filtered pop3s
+5432/tcp open     postgresql       PostgreSQL DB 9.6.0 or later
+5800/tcp open     http-proxy       sslstrip
+5900/tcp open     vnc              VNC (protocol 3.8)
+7070/tcp open     realserver?
+8080/tcp open     http             Apache Tomcat (language: en)
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.117
+PORT     STATE    SERVICE        VERSION
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds   Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+995/tcp  filtered pop3s
+1025/tcp filtered NFS-or-IIS
+1723/tcp filtered pptp
+5800/tcp open     http-proxy     sslstrip
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.118
+PORT     STATE    SERVICE        VERSION
+113/tcp  filtered ident
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+1720/tcp filtered h323q931
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000299; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8080/tcp filtered http-proxy
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.119
+PORT     STATE    SERVICE       VERSION
+53/tcp   filtered domain
+113/tcp  filtered ident
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+445/tcp  open     microsoft-ds?
+1720/tcp filtered h323q931
+5357/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000300; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+Nmap scan report for 172.30.0.120
+PORT     STATE    SERVICE       VERSION
+110/tcp  filtered pop3
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  open     netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  filtered https
+445/tcp  open     microsoft-ds?
+5357/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000138; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.122
+Host is up (0.021s latency).
+Not shown: 964 closed tcp ports (reset)
+PORT      STATE    SERVICE          VERSION
+113/tcp   filtered ident
+135/tcp   open     msrpc            Microsoft Windows RPC
+139/tcp   open     netbios-ssn      Microsoft Windows netbios-ssn
+199/tcp   filtered smux
+256/tcp   filtered fw1-secureremote
+445/tcp   filtered microsoft-ds
+691/tcp   filtered resvc
+995/tcp   filtered pop3s
+1043/tcp  filtered boinc
+1048/tcp  filtered neod2
+1071/tcp  filtered bsquare-voip
+1141/tcp  filtered mxomss
+1720/tcp  filtered h323q931
+1723/tcp  filtered pptp
+2107/tcp  filtered msmq-mgmt
+2196/tcp  filtered unknown
+2393/tcp  filtered ms-olap1
+2869/tcp  open     tcpwrapped
+3052/tcp  filtered powerchute
+4446/tcp  filtered n1-fwp
+5357/tcp  open     http             Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp  open     vnc-http         TightVNC (user: desktop-cnpalkc; VNC TCP port: 5900)
+5801/tcp  filtered vnc-http-1
+5900/tcp  open     vnc              VNC (protocol 3.8)
+6667/tcp  filtered irc
+7512/tcp  filtered unknown
+7999/tcp  filtered irdmi2
+8000/tcp  filtered http-alt
+8080/tcp  filtered http-proxy
+8651/tcp  filtered unknown
+8888/tcp  filtered sun-answerbook
+9290/tcp  filtered unknown
+9618/tcp  filtered condor
+10012/tcp filtered unknown
+10024/tcp filtered unknown
+48080/tcp filtered unknown
+
+
+Nmap scan report for 172.30.0.130
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open  vnc-http      TightVNC (user: itd-com-000311; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+9999/tcp open  http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.133
+PORT     STATE    SERVICE       VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+80/tcp   open     http          Microsoft IIS httpd 10.0
+113/tcp  filtered ident
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  open     netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+1433/tcp open     ms-sql-s      Microsoft SQL Server 2022 16.00.1000
+1720/tcp filtered h323q931
+5357/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5432/tcp open     postgresql    PostgreSQL DB 9.6.0 or later
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000314; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+8080/tcp open     http          Apache httpd
+| http-enum: 
+|_  /images/: Potentially interesting folder w/ directory listing
+8086/tcp open     http          InfluxDB http admin 1.8.10
+
+
+
+Nmap scan report for 172.30.0.134
+PORT     STATE    SERVICE          VERSION
+113/tcp  filtered ident
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds     Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+1723/tcp filtered pptp
+5800/tcp open     vnc-http         TightVNC (user: itd-com-000449; VNC TCP port: 5900)
+5900/tcp open     vnc              VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.138
+PORT      STATE    SERVICE       VERSION
+111/tcp   filtered rpcbind
+113/tcp   filtered ident
+135/tcp   open     msrpc         Microsoft Windows RPC
+139/tcp   open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+1720/tcp  filtered h323q931
+3389/tcp  filtered ms-wbt-server
+5800/tcp  open     http-proxy    sslstrip
+5900/tcp  open     vnc           VNC (protocol 3.8)
+9999/tcp  open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API).
+49152/tcp open     msrpc         Microsoft Windows RPC
+49153/tcp open     msrpc         Microsoft Windows RPC
+49154/tcp open     msrpc         Microsoft Windows RPC
+49159/tcp open     msrpc         Microsoft Windows RPC
+49161/tcp open     msrpc         Microsoft Windows RPC
+
+
+Nmap scan report for 172.30.0.141
+PORT     STATE    SERVICE    VERSION
+113/tcp  filtered ident
+135/tcp  open     tcpwrapped
+139/tcp  open     tcpwrapped
+199/tcp  filtered smux
+445/tcp  open     tcpwrapped
+1723/tcp filtered pptp
+3389/tcp open     tcpwrapped
+5800/tcp open     tcpwrapped
+5900/tcp open     tcpwrapped
+9999/tcp open     tcpwrapped
+
+
+Nmap scan report for 172.30.0.146
+PORT     STATE    SERVICE      VERSION
+21/tcp   filtered ftp
+53/tcp   filtered domain
+113/tcp  filtered ident
+135/tcp  open     msrpc        Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+445/tcp  open     microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+995/tcp  filtered pop3s
+1025/tcp filtered NFS-or-IIS
+5357/tcp open     http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     http-proxy   sslstrip
+5900/tcp open     vnc          VNC (protocol 3.8)
+9999/tcp open     http         Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.150
+PORT     STATE    SERVICE          VERSION
+53/tcp   filtered domain
+113/tcp  filtered ident
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  open     netbios-ssn      Microsoft Windows netbios-ssn
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+995/tcp  filtered pop3s
+3389/tcp filtered ms-wbt-server
+5800/tcp open     vnc-http         TightVNC (user: itd-com-000423; VNC TCP port: 5900)
+5900/tcp open     vnc              VNC (protocol 3.8)
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.156
+PORT     STATE    SERVICE         VERSION
+135/tcp  open     msrpc           Microsoft Windows RPC
+139/tcp  open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp  open     microsoft-ds?
+995/tcp  filtered pop3s
+3389/tcp filtered ms-wbt-server
+5800/tcp open     vnc-http        TightVNC (user: itd-com-000057; VNC TCP port: 5900)
+5900/tcp open     vnc             VNC (protocol 3.8)
+7070/tcp open     ssl/realserver?
+9999/tcp open     http            Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.157
+PORT     STATE    SERVICE        VERSION
+111/tcp  filtered rpcbind
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+199/tcp  filtered smux
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000526; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8080/tcp filtered http-proxy
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.159
+PORT     STATE    SERVICE          VERSION
+111/tcp  filtered rpcbind
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  open     netbios-ssn      Microsoft Windows netbios-ssn
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+1720/tcp filtered h323q931
+3389/tcp filtered ms-wbt-server
+5800/tcp open     http-proxy       sslstrip
+5900/tcp open     vnc              VNC (protocol 3.8)
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.164
+PORT     STATE    SERVICE         VERSION
+23/tcp   filtered telnet
+135/tcp  open     msrpc           Microsoft Windows RPC
+139/tcp  open     netbios-ssn     Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds    Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+993/tcp  filtered imaps
+5800/tcp open     http-proxy      sslstrip
+5900/tcp open     vnc             VNC (protocol 3.8)
+7070/tcp open     ssl/realserver?
+9999/tcp open     http            Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.166
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http       Microsoft Windows Embedded CE Web Server
+443/tcp open  tcpwrapped
+
+
+
+Nmap scan report for 172.30.0.168
+PORT     STATE    SERVICE        VERSION
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+5357/tcp open     http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000276; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.169
+PORT     STATE    SERVICE        VERSION
+111/tcp  filtered rpcbind
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+1720/tcp filtered h323q931
+3389/tcp filtered ms-wbt-server
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000124; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.170
+
+PORT     STATE    SERVICE       VERSION
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+445/tcp  open     microsoft-ds?
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000125; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.171
+PORT     STATE    SERVICE        VERSION
+21/tcp   filtered ftp
+23/tcp   filtered telnet
+53/tcp   filtered domain
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+995/tcp  filtered pop3s
+5357/tcp open     http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000081; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.172
+PORT     STATE    SERVICE          VERSION
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  open     netbios-ssn?
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds?
+1720/tcp filtered h323q931
+3389/tcp filtered ms-wbt-server
+5800/tcp open     vnc-http         TightVNC
+5900/tcp open     vnc              VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http             Golang net/http server
+
+
+Nmap scan report for 172.30.0.177
+PORT     STATE    SERVICE    VERSION
+43/tcp   filtered whois
+135/tcp  filtered msrpc
+139/tcp  open     tcpwrapped
+199/tcp  filtered smux
+443/tcp  filtered https
+445/tcp  open     tcpwrapped
+995/tcp  filtered pop3s
+1025/tcp filtered NFS-or-IIS
+5357/tcp open     tcpwrapped
+5800/tcp open     tcpwrapped
+5900/tcp open     tcpwrapped
+
+
+Nmap scan report for 172.30.0.179
+Host is up (0.018s latency).
+Not shown: 990 closed tcp ports (reset)
+PORT     STATE    SERVICE       VERSION
+111/tcp  filtered rpcbind
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+445/tcp  open     microsoft-ds?
+3389/tcp filtered ms-wbt-server
+5357/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000292; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+8080/tcp filtered http-proxy
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.181
+PORT     STATE    SERVICE        VERSION
+113/tcp  filtered ident
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds   Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+993/tcp  filtered imaps
+1025/tcp filtered NFS-or-IIS
+1723/tcp filtered pptp
+3389/tcp open     ms-wbt-server  Microsoft Terminal Services
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000195; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+
+
+Nmap scan report for 172.30.0.183
+PORT     STATE    SERVICE       VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+53/tcp   filtered domain
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+199/tcp  filtered smux
+445/tcp  open     microsoft-ds  Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+1025/tcp filtered NFS-or-IIS
+3389/tcp open     ms-wbt-server
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000580; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Host script results:
+| smb-vuln-ms08-067: 
+|   VULNERABLE:
+|   Microsoft Windows system vulnerable to remote code execution (MS08-067)
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2008-4250
+|           The Server service in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP1 and SP2,
+|           Vista Gold and SP1, Server 2008, and 7 Pre-Beta allows remote attackers to execute arbitrary
+|           code via a crafted RPC request that triggers the overflow during path canonicalization.
+|           
+|     Disclosure date: 2008-10-23
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-4250
+|_      https://technet.microsoft.com/en-us/library/security/ms08-067.aspx
+
+
+
+Nmap scan report for 172.30.0.184
+PORT     STATE    SERVICE       VERSION
+22/tcp   filtered ssh
+113/tcp  filtered ident
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  open     netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+1720/tcp filtered h323q931
+1723/tcp filtered pptp
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000173; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+8080/tcp filtered http-proxy
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.186
+PORT     STATE    SERVICE        VERSION
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000535; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+
+Nmap scan report for 172.30.0.191
+PORT     STATE    SERVICE          VERSION
+111/tcp  filtered rpcbind
+135/tcp  open     msrpc            Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+143/tcp  filtered imap
+256/tcp  filtered fw1-secureremote
+445/tcp  open     microsoft-ds     Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+5800/tcp open     vnc-http         TightVNC (user: itd-com-000240; VNC TCP port: 5900)
+5900/tcp open     vnc              VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http             Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.192
+PORT     STATE    SERVICE       VERSION
+23/tcp   filtered telnet
+53/tcp   filtered domain
+111/tcp  filtered rpcbind
+113/tcp  filtered ident
+135/tcp  filtered msrpc
+139/tcp  open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open     microsoft-ds?
+1720/tcp filtered h323q931
+5800/tcp open     vnc-http      TightVNC (user: itd-com-000183; VNC TCP port: 5900)
+5900/tcp open     vnc           VNC (protocol 3.8)
+9999/tcp open     http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.193
+PORT      STATE    SERVICE        VERSION
+22/tcp    filtered ssh
+53/tcp    filtered domain
+113/tcp   filtered ident
+135/tcp   open     msrpc          Microsoft Windows RPC
+139/tcp   open     netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+993/tcp   filtered imaps
+995/tcp   filtered pop3s
+1723/tcp  filtered pptp
+3306/tcp  filtered mysql
+5800/tcp  open     vnc-http       TightVNC (user: itd-com-000332; VNC TCP port: 5900)
+5900/tcp  open     vnc            VNC (protocol 3.8)
+8888/tcp  filtered sun-answerbook
+9999/tcp  open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+14000/tcp open     scotty-ft?
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.195
+PORT     STATE    SERVICE        VERSION
+53/tcp   filtered domain
+113/tcp  filtered ident
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+993/tcp  filtered imaps
+1720/tcp filtered h323q931
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000333; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.199
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+5800/tcp open  vnc-http     TightVNC (user: itd-com-000498; VNC TCP port: 5900)
+5900/tcp open  vnc          VNC (protocol 3.8)
+9999/tcp open  http         Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.202
+PORT     STATE    SERVICE        VERSION
+21/tcp   filtered ftp
+23/tcp   filtered telnet
+135/tcp  open     msrpc          Microsoft Windows RPC
+139/tcp  open     netbios-ssn    Microsoft Windows netbios-ssn
+143/tcp  filtered imap
+445/tcp  open     microsoft-ds?
+995/tcp  filtered pop3s
+5800/tcp open     vnc-http       TightVNC (user: itd-com-000453; VNC TCP port: 5900)
+5900/tcp open     vnc            VNC (protocol 3.8)
+8888/tcp filtered sun-answerbook
+9999/tcp open     http           Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+
+Nmap scan report for 172.30.0.204
+PORT      STATE    SERVICE         VERSION
+22/tcp    filtered ssh
+53/tcp    filtered domain
+70/tcp    filtered gopher
+85/tcp    filtered mit-ml-dev
+113/tcp   filtered ident
+135/tcp   open     msrpc           Microsoft Windows RPC
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+143/tcp   filtered imap
+264/tcp   filtered bgmp
+340/tcp   filtered unknown
+445/tcp   open     microsoft-ds?
+512/tcp   filtered exec
+563/tcp   filtered snews
+903/tcp   filtered iss-console-mgr
+1147/tcp  filtered capioverlan
+1309/tcp  filtered jtag-server
+1641/tcp  filtered invision
+1720/tcp  filtered h323q931
+2010/tcp  filtered search
+2040/tcp  filtered lam
+2047/tcp  filtered dls
+2100/tcp  filtered amiganetfs
+2111/tcp  filtered kx
+2126/tcp  filtered pktcable-cops
+2500/tcp  filtered rtsserv
+2869/tcp  open     tcpwrapped
+3077/tcp  filtered orbix-loc-ssl
+3300/tcp  filtered ceph
+3333/tcp  filtered dec-notes
+3546/tcp  filtered unknown
+3971/tcp  filtered lanrevserver
+4003/tcp  filtered pxc-splr-ft
+4224/tcp  filtered xtell
+5431/tcp  filtered park-agent
+5800/tcp  open     vnc-http        TightVNC (user: itd-com-000548; VNC TCP port: 5900)
+5862/tcp  filtered unknown
+5900/tcp  open     vnc             VNC (protocol 3.8)
+6346/tcp  filtered gnutella
+8042/tcp  filtered fs-agent
+8873/tcp  filtered dxspider
+8888/tcp  filtered sun-answerbook
+9001/tcp  filtered tor-orport
+9220/tcp  filtered unknown
+9415/tcp  filtered unknown
+9999/tcp  open     http            Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+10003/tcp filtered documentum_s
+10629/tcp filtered unknown
+13456/tcp filtered unknown
+25734/tcp filtered unknown
+32778/tcp filtered sometimes-rpc19
+40911/tcp filtered unknown
+45100/tcp filtered unknown
+49152/tcp filtered unknown
+50006/tcp filtered unknown
+57797/tcp filtered unknown
+
+
+Nmap scan report for 172.30.0.207
+PORT     STATE    SERVICE         VERSION
+53/tcp   filtered domain
+113/tcp  filtered ident
+135/tcp  open     msrpc           Microsoft Windows RPC
+139/tcp  filtered netbios-ssn
+199/tcp  filtered smux
+445/tcp  open     microsoft-ds?
+5800/tcp open     vnc-http        TightVNC (user: itd-com-000212; VNC TCP port: 5900)
+5900/tcp open     vnc             VNC (protocol 3.8)
+7070/tcp open     ssl/realserver?
+
+
+
+Nmap scan report for 172.30.0.214
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+5800/tcp open  tcpwrapped
+5900/tcp open  tcpwrapped
+9999/tcp open  tcpwrapped
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+
+Nmap scan report for 172.30.0.215
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+5900/tcp open  vnc           VNC (protocol 3.8)
+9999/tcp open  http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.218
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+5800/tcp open  tcpwrapped
+5900/tcp open  tcpwrapped
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.230
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+5800/tcp open  tcpwrapped
+5900/tcp open  tcpwrapped
+9999/tcp open  tcpwrapped
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+Nmap scan report for 172.30.0.237
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5800/tcp open  http-proxy    sslstrip
+5900/tcp open  vnc           VNC (protocol 3.8)
+9999/tcp open  http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.243
+PORT      STATE SERVICE         VERSION
+135/tcp   open  msrpc           Microsoft Windows RPC
+139/tcp   open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds    Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ms-wbt-server   Microsoft Terminal Service
+5800/tcp  open  vnc-http        TightVNC (user: unifi-controlle; VNC TCP port: 5900)
+5900/tcp  open  vnc             VNC (protocol 3.8)
+6789/tcp  open  ibm-db2-admin?
+8080/tcp  open  http            Apache Tomcat (language: en)
+8443/tcp  open  ssl/nagios-nsca Nagios NSCA
+| http-enum: 
+|_  /api/: Potentially interesting folder (401 )
+49152/tcp open  msrpc           Microsoft Windows RPC
+49153/tcp open  msrpc           Microsoft Windows RPC
+49154/tcp open  msrpc           Microsoft Windows RPC
+49155/tcp open  msrpc           Microsoft Windows RPC
+49156/tcp open  msrpc           Microsoft Windows RPC
+49157/tcp open  msrpc           Microsoft Windows RPC
+
+
+Nmap scan report for 172.30.0.244
+PORT     STATE SERVICE    VERSION
+135/tcp  open  tcpwrapped
+139/tcp  open  tcpwrapped
+445/tcp  open  tcpwrapped
+5357/tcp open  tcpwrapped
+5800/tcp open  tcpwrapped
+5900/tcp open  tcpwrapped
+9999/tcp open  tcpwrapped
+
+
+Host script results:
+| smb-vuln-cve2009-3103: 
+|   VULNERABLE:
+|   SMBv2 exploit (CVE-2009-3103, Microsoft Security Advisory 975497)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2009-3103
+|           Array index error in the SMBv2 protocol implementation in srv2.sys in Microsoft Windows Vista Gold, SP1, and SP2,
+|           Windows Server 2008 Gold and SP2, and Windows 7 RC allows remote attackers to execute arbitrary code or cause a
+|           denial of service (system crash) via an & (ampersand) character in a Process ID High header field in a NEGOTIATE
+|           PROTOCOL REQUEST packet, which triggers an attempted dereference of an out-of-bounds memory location,
+|           aka "SMBv2 Negotiation Vulnerability."
+|           
+|     Disclosure date: 2009-09-08
+|     References:
+|       http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2009-3103
+
+
+
+
+Nmap scan report for 172.30.0.251
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5800/tcp open  vnc-http      TightVNC (user: itd-com-000393; VNC TCP port: 5900)
+5900/tcp open  vnc           VNC (protocol 3.8)
+6646/tcp open  tcpwrapped
+9999/tcp open  http          Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+
+
+Nmap scan report for 172.30.0.252
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 7.1 (protocol 2.0)
+80/tcp   open  http       mini_httpd
+| http-enum: 
+|   /core/: Potentially interesting folder w/ directory listing
+|_  /custom/: Potentially interesting folder w/ directory listing
+443/tcp  open  ssl/http   mini_httpd
+4343/tcp open  ssl/http   mini_httpd
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=172.30.0.252
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open("","results","width=640,height=480,menubar=1,toolbar=1,location=1,directories=1,status=1,scrollbars=1,resizable=1")
+|     Pages: https://172.30.0.252:4343/jscripts/application-compiled.js?bn=59123
+|     
+|     Source: window.open("","","width=640,height=480,menubar=1,toolbar=1,location=1,directories=1,status=1,scrollbars=1,resizable=1")
+|_    Pages: https://172.30.0.252:4343/jscripts/application-compiled.js?bn=59123
+8080/tcp open  http-proxy tinyproxy 1.8.2
+
+
+Nmap scan report for 172.30.0.254
+PORT     STATE    SERVICE      VERSION
+22/tcp   filtered ssh
+135/tcp  open     msrpc        Microsoft Windows RPC
+139/tcp  open     netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open     microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+993/tcp  filtered imaps
+5800/tcp open     vnc-http     TightVNC (user: itd-com-000456; VNC TCP port: 5900)
+5900/tcp open     vnc          VNC (protocol 3.8)
+9999/tcp open     http         Golang net/http server (Go-IPFS json-rpc or InfluxDB API)

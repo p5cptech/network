@@ -1,0 +1,462 @@
+Nmap scan report for 192.168.4.7
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Apache httpd 2.4.37 ((Win32) OpenSSL/1.1.1a PHP/7.3.1)
+| http-enum: 
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /img/: Potentially interesting directory w/ listing on 'apache/2.4.37 (win32) openssl/1.1.1a php/7.3.1'
+|_http-server-header: Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http      Apache httpd 2.4.37 ((Win32) OpenSSL/1.1.1a PHP/7.3.1)
+| http-enum: 
+|   /icons/: Potentially interesting folder w/ directory listing
+|_  /img/: Potentially interesting directory w/ listing on 'apache/2.4.37 (win32) openssl/1.1.1a php/7.3.1'
+|_http-server-header: Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1
+| ssl-dh-params: 
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     https://192.168.4.7:443/dashboard/javascripts/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     https://192.168.4.7:443/dashboard/javascripts/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     https://192.168.4.7:443/dashboard/javascripts/?C=M%3BO%3DA%27%20OR%20sqlspider
+|_    https://192.168.4.7:443/dashboard/javascripts/?C=N%3BO%3DD%27%20OR%20sqlspider
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3306/tcp  open  mysql         MariaDB 5.5.5-10.1.37
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+| ssl-dh-params: 
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 1024
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+5800/tcp  open  vnc-http      TightVNC (user: pjmwinsvr-7; VNC TCP port: 5900)
+5900/tcp  open  vnc           VNC (protocol 3.8)
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8080/tcp  open  websocket     Ogar agar.io server
+49152/tcp open  msrpc         Microsoft Windows RPC
+49153/tcp open  msrpc         Microsoft Windows RPC
+49154/tcp open  msrpc         Microsoft Windows RPC
+49155/tcp open  msrpc         Microsoft Windows RPC
+49156/tcp open  msrpc         Microsoft Windows RPC
+49160/tcp open  msrpc         Microsoft Windows RPC
+49161/tcp open  msrpc         Microsoft Windows RPC
+
+
+Nmap scan report for 192.168.4.8
+PORT      STATE SERVICE               VERSION
+22/tcp    open  ssh                   OpenSSH 9.6p1 Ubuntu 3ubuntu13.11 (Ubuntu Linux; protocol 2.0)
+443/tcp   open  ssl/http              nginx 1.24.0 (Ubuntu)
+|_http-server-header: nginx/1.24.0 (Ubuntu)
+445/tcp   open  netbios-ssn           Samba smbd 4
+555/tcp   open  dsf?
+3306/tcp  open  mysql                 MySQL 8.0.43-0ubuntu0.24.04.1
+5432/tcp  open  postgresql            PostgreSQL DB 9.6.0 or later
+8080/tcp  open  http                  nginx 1.24.0 (Ubuntu)
+10000/tcp open  ssl/snet-sensor-mgmt?
+
+
+
+Nmap scan report for 192.168.4.10
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http        Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+10000/tcp open  http        MiniServ 1.984 (Webmin httpd)
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <html>
+|   <head>
+|   <style data-err type="text/css">.err-head,.err-content,.err-body { font-family: Lucida Console, Courier, monospace;}.err-head { color: #f12b2b; font-size: 14px; font-weight: 500; padding: 5px 2.5px 0; text-transform: uppercase; transform: scale(1, 1.5); white-space: pre-wrap;}.err-content { padding-left: 2.5px; white-space: pre-wrap;}.err-content,.err-body { font-size: 12.5px;}.err-head[data-fatal-error-text] { padding: 0;}.err-stack caption,.err-stack > tbody > tr:first-child > td > b { color: #151515; font-weight: bold; text-align: left;}.err-stack > tbody > tr:first-child > td > b { border-bottom: 1px solid #151515;}.err-stack > tbody > tr:first-child>td { font-family: unset; font-size: 14px; height: 25px; text-transform: uppercase; transform: scale(1, 1.2); vertical-align: top;}.err-stack { border: 1px dashed #151515}.err-stack.captured { margin-left: 12px; width: auto}.err-stack tr td { font-family: Lucida Console, Courier, monospace; font-size: 13px; padding: 1px 10px; transform: scale(1, 1.15);}.err-stack tr:not(:first-child) td.captured { font-size: 90%;}.err-stack > tr:first-child > td.captured { font-size: 96%; padding-bottom: 7px; padding-top: 3px;}.err-stack caption.err-head { padding:0 0 10px 0;}.err-stack caption.err-head.captured { color: #222; font-size:98%;}</style>
+|   <title>200 &mdash; Document follows</title></head>
+|   <body class="err-body"><h2 class="err-head">Error &mdash; Document follows</h2>
+|   <p class="err-content">This web server is running in SSL mode. Try the URL <a href='https://pjmlnxsvr10:10000/'>https://pjmlnxsvr10:10000/</a> instead.</p>
+|   </body></html>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+Host script results:
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.      
+
+TRACEROUTE (using port 587/tcp)
+HOP RTT      ADDRESS
+-   Hops 1-3 are the same as for 192.168.4.7
+4   27.31 ms 192.168.4.10
+
+Nmap scan report for 192.168.4.11
+PORT      STATE SERVICE               VERSION
+21/tcp    open  ftp?
+| fingerprint-strings: 
+|   GenericLines: 
+|     220 ProFTPD Server (ProFTPD) [::ffff:192.168.4.11]
+|     Invalid command: try being more creative
+|_    Invalid command: try being more creative
+22/tcp    open  ssh                   OpenSSH 8.2p1 Ubuntu 4ubuntu0.12 (Ubuntu Linux; protocol 2.0)90EA-47900DAD1D1E	7.0	https://vulners.com/githubexploit/284B94FC-FD5D-5C47-90EA-47900DAD1D1E	*EXPLOIT*
+80/tcp    open  http                  Apache httpd 2.4.54 ((Unix) OpenSSL/1.1.1s PHP/8.0.25 mod_perl/2.0.12 Perl/v5.34.1)
+|_http-server-header: Apache/2.4.54 (Unix) OpenSSL/1.1.1s PHP/8.0.25 mod_perl/2.0.12 Perl/v5.34.1
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.4.11:80/phpmyadmin/js/dist/error_report.js?v=5.2.0%27%20OR%20sqlspider
+|     http://192.168.4.11:80/phpmyadmin/js/dist/functions.js?v=5.2.0%27%20OR%20sqlspider
+|     http://192.168.4.11:80/phpmyadmin/index.php?db=SCADA&lang=en%27%20OR%20sqlspider&route=%2Ftable%2Frecent-favorite&table=suto_data
+|     http://192.168.4.11:80/phpmyadmin/index.php?db=panata&lang=en%27%20OR%20sqlspider&route=%2Ftable%2Frecent-favorite&table=printer_global_settings
+|     http://192.168.4.11:80/phpmyadmin/index.php?db=OEE_Monitoring&lang=en%27%20OR%20sqlspider&route=%2Ftable%2Frecent-favorite&table=tbl_location
+|     http://192.168.4.11:80/phpmyadmin/js/dist/ajax.js?v=5.2.0%27%20OR%20sqlspider
+|     http://192.168.4.11:80/phpmyadmin/index.php?db=OEE_Monitoring&lang=en%27%20OR%20sqlspider&route=%2Ftable%2Frecent-favorite&table=tbl_status_mc
+|     http://192.168.4.11:80/phpmyadmin/index.php?db=panata&lang=en%27%20OR%20sqlspider&route=%2Ftable%2Frecent-favorite&table=standard_config
+| http-enum: 
+|   /phpmyadmin/: phpMyAdmin
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /img/: Potentially interesting folder w/ directory listing
+|_  /webalizer/: Potentially interesting folder w/ directory listing
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.11
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.4.11:80/phpmyadmin/doc/html/config.html
+|     Form id: 
+|_    Form action: search.html
+139/tcp   open  netbios-ssn           Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+443/tcp   open  ssl/http              Apache httpd 2.4.54 ((Unix) OpenSSL/1.1.1s PHP/8.0.25 mod_perl/2.0.12 Perl/v5.34.1
+|_http-trace: TRACE is enabled
+| ssl-dh-params: 
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+|_http-server-header: Apache/2.4.54 (Unix) OpenSSL/1.1.1s PHP/8.0.25 mod_perl/2.0.12 Perl/v5.34.1
+| http-enum: 
+|   /phpmyadmin/: phpMyAdmin
+|   /icons/: Potentially interesting folder w/ directory listing
+|   /img/: Potentially interesting folder w/ directory listing
+|_  /webalizer/: Potentially interesting folder w/ directory listing
+445/tcp   open  netbios-ssn           Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3030/tcp  open  http                  Grafana http
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+| http-enum: 
+|   /login/: Login page
+|   /robots.txt: Robots file
+|   /api/: Potentially interesting folder (401 Unauthorized)cal
+|_  /api-docs/: Potentially interesting folder (401 Unauthorized)
+3306/tcp  open  mysql                 MySQL 8.0.41-0ubuntu0.20.04.1
+10000/tcp open  ssl/snet-sensor-mgmt?
+
+
+
+Nmap scan report for 192.168.4.12
+PORT      STATE SERVICE               VERSION
+22/tcp    open  ssh                   OpenSSH 9.6p1 Ubuntu 3ubuntu13.11 (Ubuntu Linux; protocol 2.0)
+139/tcp   open  netbios-ssn           Samba smbd 4
+445/tcp   open  netbios-ssn           Samba smbd 4
+
+555/tcp   open  dsf?
+5999/tcp  open  vnc                   RealVNC Enterprise 5.3 or later (protocol 5.0)
+10000/tcp open  ssl/snet-sensor-mgmt?
+
+
+Nmap scan report for 192.168.4.17
+PORT      STATE SERVICE     VERSION
+22/tcp    open  ssh         OpenSSH 6.6.1p1 Ubuntu 2ubuntu2 (Ubuntu Linux; protocol 2.0)
+53/tcp    open  domain      ISC BIND 9.9.5-3 (Ubuntu Linux)
+80/tcp    open  http        Apache httpd 2.4.7
+
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.4.17:80/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=N%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=M%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=S%3BO%3DD%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=D%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=S%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=N%3BO%3DA%27%20OR%20sqlspider
+|     http://192.168.4.17:80/?C=M%3BO%3DD%27%20OR%20sqlspider
+| http-enum: 
+|   /: Root directory w/ listing on 'apache/2.4.7 (ubuntu)'
+|_  /html/: Potentially interesting folder
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3306/tcp  open  mysql       MySQL 5.5.38-0ubuntu0.14.04.1
+10000/tcp open  http        MiniServ 1.801 (Webmin httpd)
+| Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+| /index.php source code:
+| <h1>Error - Document follows</h1>
+|_<pre>This web server is running in SSL mode. Try the URL <a href='https://pjmubt17.www.pjmubt17.co.id:10000/'>https://pjmubt17.www.pjmubt17.co.id:10000/</a> instead.<br></pre>
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <h1>Error - Document follows</h1>
+|   <pre>This web server is running in SSL mode. Try the URL <a href='https://pjmubt17.www.pjmubt17.co.id:10000/'>https://pjmubt17.www.pjmubt17.co.id:10000/</a> instead.<br></pre>
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+
+
+Host script results:
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE\
+22/tcp    open  ssh                   OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+80/tcp    open  http                  nginx 1.24.0 (Ubuntu)
+|_http-server-header: nginx/1.24.0 (Ubuntu)
+81/tcp    open  http                  nginx 1.24.0 (Ubuntu)
+|_http-server-header: nginx/1.24.0 (Ubuntu)
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+139/tcp   open  netbios-ssn           Samba smbd 4
+3000/tcp  open  http                  Golang net/http server
+| http-sql-injection: 
+|   Possible sqli for queries:
+|     http://192.168.4.22:3000/assets/js/index.js?v=1.22.0%27%20OR%20sqlspider
+|     http://192.168.4.22:3000/assets/js/index.js?v=1.22.0%27%20OR%20sqlspider
+|     http://192.168.4.22:3000/assets/js/index.js?v=1.22.0%27%20OR%20sqlspider
+|     http://192.168.4.22:3000/assets/js/index.js?v=1.22.0%27%20OR%20sqlspider
+|     http://192.168.4.22:3000/assets/js/swagger.js?v=1.22.0%27%20OR%20sqlspider
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.22
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.4.22:3000/explore/repos
+|     Form id: repo-search-form
+|     Form action: 
+|     
+|     Path: http://192.168.4.22:3000/agrizal.afgani/test_repo/stars
+|     Form id: 
+|     Form action: /agrizal.afgani/test_repo/action/watch
+|     
+|     Path: http://192.168.4.22:3000/agrizal.afgani/test_repo/stars
+|     Form id: 
+|     Form action: /agrizal.afgani/test_repo/action/star
+|         
+3306/tcp  open  mysql                 MySQL 8.0.44-0ubuntu0.24.04.1
+5432/tcp  open  postgresql            PostgreSQL DB 9.6.0 or later
+8001/tcp  open  vcom-tunnel?
+8086/tcp  open  http                  InfluxDB http admin 2.7.12
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="InfluxDB is a time series platform, purpose-built by InfluxData for storing metrics and events, provides real-time visibility into stacks, sensors, and systems."><title>InfluxDB</title><base href="/"><base href=""><link rel="icon" href="/favicon.ico"></head><body><div id="react-root" data-basepath=""></div><script defer="defer" src="/64a6202951.js"></script></body></html>
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+10000/tcp open  ssl/snet-sensor-mgmt?
+
+
+Nmap scan report for 192.168.4.31
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       EWS-NIC5 99.00 (Xerox printer http config)
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.31
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.4.31:80/status/statgeneral.htm
+|     Form id: 
+|     Form action: statgeneral.htm
+|     
+|     Path: http://192.168.4.31:80/status/statintray.htm
+|     Form id: 
+|     Form action: statintray.htm
+|     
+|     Path: http://192.168.4.31:80/status/statcover.htm
+|     Form id: 
+|     Form action: statcover.htm
+|     
+|     Path: http://192.168.4.31:80/status/statsupl.htm
+|     Form id: 
+|     Form action: statsupl.htm
+|     
+|     Path: http://192.168.4.31:80/status/statouttray.htm
+|     Form id: 
+|     Form action: statouttray.htm
+|     
+|     Path: http://192.168.4.31:80/setting/setsys.htm
+|     Form id: 
+|_    Form action: setsys.htm
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.31
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statgeneral.htm' value='Refresh'>")
+|     Pages: http://192.168.4.31:80/status/statgeneral.htm
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statsupl.htm' value='Refresh'>")
+|     Pages: http://192.168.4.31:80/status/statsupl.htm
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statouttray.htm' value='Refresh'>")
+|     Pages: http://192.168.4.31:80/status/statouttray.htm
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statevent.htm' value='Refresh'>")
+|     Pages: http://192.168.4.31:80/status/statevent.htm
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statintray.htm' value='Refresh'>")
+|     Pages: http://192.168.4.31:80/status/statintray.htm
+|     
+|     Source: document.write("<input type='button' onClick=window.location='statcover.htm' value='Refresh'>")
+|_    Pages: http://192.168.4.31:80/status/statcover.htm
+|_http-server-header: EWS-NIC5/99.00
+443/tcp  open  ssl/https?
+515/tcp  open  printer
+631/tcp  open  rtsp
+
+
+
+Nmap scan report for 192.168.4.40
+PORT      STATE SERVICE         VERSION
+7/tcp     open  echo
+9/tcp     open  discard?
+13/tcp    open  daytime         Microsoft Windows USA daytime
+17/tcp    open  qotd            Windows qotd (English)
+19/tcp    open  chargen
+135/tcp   open  msrpc           Microsoft Windows RPC
+139/tcp   open  netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds    Microsoft Windows Embedded Standard microsoft-ds (workgroup: WORKGROUP)
+515/tcp   open  printer         Microsoft lpd
+2103/tcp  open  msrpc           Microsoft Windows RPC
+2105/tcp  open  msrpc           Microsoft Windows RPC
+2107/tcp  open  msrpc           Microsoft Windows RPC
+5800/tcp  open  vnc-http        TightVNC (user: oee-svr; VNC TCP port: 5900)
+5900/tcp  open  vnc             VNC (protocol 3.8)
+7070/tcp  open  ssl/realserver?
+8080/tcp  open  http            Microsoft IIS httpd 7.5
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_      http://www.exploit-db.com/exploits/1244/
+|_http-server-header: Microsoft-IIS/7.5
+49152/tcp open  msrpc           Microsoft Windows RPC
+49153/tcp open  msrpc           Microsoft Windows RPC
+49154/tcp open  msrpc           Microsoft Windows RPC
+49158/tcp open  msrpc           Microsoft Windows RPC
+49159/tcp open  msrpc           Microsoft Windows RPC
+49160/tcp open  msrpc           Microsoft Windows RPC
+
+
+Host script results:
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+
+
+Nmap scan report for 192.168.4.100
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Virata-EmWeb 6.2.1 (HP Color LaserJet CP5225n printer http config)
+|_http-server-header: Virata-EmWeb/R6_2_1
+| http-csrf: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.100
+|   Found the following possible CSRF vulnerabilities: 
+|     
+|     Path: http://192.168.4.100:80/
+|     Form id: order
+|     Form action: /hp/device/contentHeader.html
+|     
+|     Path: http://192.168.4.100:80/
+|     Form id: suppliesdetails
+|     Form action: /hp/device/supplies_status.html
+|     
+|     Path: http://192.168.4.100:80/info_suppliesStatus.html?tab=Status&amp;menu=SupplyStatus
+|     Form id: order
+|     Form action: /hp/device/contentHeader.html
+|     
+|     Path: http://192.168.4.100:80/info_config_network.html?tab=Networking&amp;menu=NetConfig
+|     Form id: order
+|_    Form action: /hp/device/contentHeader.html
+| http-dombased-xss: 
+| Spidering limited to: maxdepth=3; maxpagecount=20; withinhost=192.168.4.100
+|   Found the following indications of potential DOM based XSS: 
+|     
+|     Source: window.open('http://www.hp.com', target,'resizable=yes,scrollbars=yes,menubar=yes,location=yes,toolbar=yes,status=yes')
+|_    Pages: http://192.168.4.100:80/, http://192.168.4.100:80/info_config_network.html?tab=Networking&amp;menu=NetConfig
+|_http-trace: TRACE is enabled
+515/tcp  open  printer
+8080/tcp open  soap       gSOAP 2.7
+|_http-server-header: gSOAP/2.7
+9100/tcp open  jetdirect?
+

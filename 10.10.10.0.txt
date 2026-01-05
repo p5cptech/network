@@ -1,0 +1,727 @@
+Nmap scan report for 10.10.10.1
+PORT     STATE  SERVICE     VERSION
+113/tcp  closed ident
+135/tcp  closed msrpc
+139/tcp  closed netbios-ssn
+443/tcp  closed https
+587/tcp  closed submission
+993/tcp  closed imaps
+1720/tcp closed h323q931
+5900/tcp closed vnc
+
+
+Nmap scan report for 10.10.10.2
+PORT      STATE    SERVICE       VERSION
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+1110/tcp  filtered nfsd-status
+2869/tcp  filtered icslap
+3389/tcp  open     ms-wbt-server Microsoft Terminal Service
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+8088/tcp  open     http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+| http-enum: 
+|_  /phpinfo.php: Possible information file
+|_http-trace: TRACE is enabled
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+8291/tcp  filtered unknown
+19780/tcp filtered unknown
+49152/tcp open     msrpc         Microsoft Windows RPC
+49153/tcp open     msrpc         Microsoft Windows RPC
+49154/tcp open     msrpc         Microsoft Windows RPC
+49155/tcp open     msrpc         Microsoft Windows RPC
+49156/tcp open     msrpc         Microsoft Windows RPC
+49157/tcp open     msrpc         Microsoft Windows RPC
+
+
+Nmap scan report for 10.10.10.3
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware ESXi Server httpd
+427/tcp  open   svrloc?
+443/tcp  open   ssl/http        VMware ESXi Web UI
+| vmware-version: 
+|   Server version: VMware ESXi 6.5.0
+|   Build: 5969303
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+
+
+Nmap scan report for 10.10.10.4
+PORT     STATE  SERVICE    VERSION
+22/tcp   open   ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open   http       Apache httpd 2.4.41
+| http-enum: 
+|_  /apps/: Potentially interesting folder
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+3000/tcp open   http       Grafana http
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-enum: 
+|   /login/: Login page
+|   /robots.txt: Robots file
+|   /api/: Potentially interesting folder (401 Unauthorized)
+|_  /api-docs/: Potentially interesting folder (401 Unauthorized)
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+
+8080/tcp open   http-proxy
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, RPCCheck, SSLSessionReq, Socks4, Socks5: 
+|     HTTP/1.0 403 Forbidden
+|     content-type: text/html
+|     content-length: 173
+|_    <html><head><meta charset=utf-8 http-equiv="Content-Language" content="en"/><link rel="stylesheet" type="text/css" href="/error.css"/></head><body><h1>403</h1></body></html>
+8099/tcp open   http       Apache httpd 2.4.41 ((Ubuntu))
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.41: 
+| http-git: 
+|   10.10.10.4:8099/.git/
+|     Git repository found!
+|     Repository description: Unnamed repository; edit this file 'description' to name the...
+|     Remotes:
+|_      http://172.25.0.111/it-adr/website-it/website_apps.git
+| http-enum: 
+|   /.git/HEAD: Git folder
+|   /changelog.txt: Version 5.2.2
+|_  /README: Interesting, a readme.
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+
+
+
+Nmap scan report for 10.10.10.5
+PORT     STATE    SERVICE  VERSION
+80/tcp   open     http     GoAhead WebServer
+|_http-server-header: GoAhead-Webs
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| http-litespeed-sourcecode-download: 
+| Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+| /index.php source code:
+| 
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+443/tcp  open     ssl/http GoAhead WebServer
+|_http-server-header: GoAhead-Webs
+| http-litespeed-sourcecode-download: 
+| Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+|_/index.php source code:
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+
+
+Nmap scan report for 10.10.10.6
+PORT     STATE    SERVICE  VERSION
+21/tcp   open     ftp      vsftpd 3.0.3
+80/tcp   open     http     nginx
+| http-vuln-cve2011-3192: 
+1433/tcp open     ms-sql-s Microsoft SQL Server 2017 14.00.3030
+8083/tcp open     http     nginx
+| http-enum: 
+|   /robots.txt: Robots file
+|_  /api/: Potentially interesting folder
+8084/tcp open     http     nginx
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+8086/tcp open     http     nginx
+8087/tcp open     http     nginx
+8088/tcp open     http     nginx
+
+
+Nmap scan report for 10.10.10.7
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:7.9p1: 
+111/tcp  open     rpcbind 2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+3128/tcp open     http    Proxmox Virtual Environment REST API 3.0
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+
+
+Nmap scan report for 10.10.10.8
+PORT     STATE    SERVICE  VERSION
+80/tcp   open     http     nginx
+1433/tcp open     ms-sql-s Microsoft SQL Server 2017 14.00.3030
+8090/tcp open     http     nginx
+
+
+Nmap scan report for 10.10.10.9
+PORT     STATE    SERVICE  VERSION
+1433/tcp open     ms-sql-s Microsoft SQL Server 2017 14.00.3030
+3306/tcp open     mysql    MySQL (unauthorized)
+
+
+Nmap scan report for 10.10.10.10
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-enum: 
+|_  /phpinfo.php: Possible information file
+8080/tcp open     http    Apache httpd 2.4.41 ((Ubuntu))
+| http-enum: 
+|_  /phpinfo.php: Possible information file
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+8291/tcp filtered unknown
+9080/tcp open     http    Golang net/http server
+9081/tcp open     http    Golang net/http server
+9090/tcp open     http    Golang net/http server
+
+
+Nmap scan report for 10.10.10.11
+PORT     STATE    SERVICE       VERSION
+22/tcp   open     ssh           OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+3001/tcp open     nagios-nsca   Nagios NSCA
+3333/tcp open     http          Jetty 12.0.22
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: UNKNOWN (unable to test)
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd :
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+|_http-server-header: Jetty(12.0.22)
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+8080/tcp open     http-proxy
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LDAPBindReq, LDAPSearchReq, LPDString, RPCCheck, SIPOptions, SMBProgNeg, SSLSessionReq, Socks4, Socks5, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest: 
+|     HTTP/1.1 404 Not Found
+|     Date: Fri, 12 Dec 2025 01:34:10 GMT
+|     Connection: close
+|_    Found
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+8088/tcp open     http          Werkzeug httpd 3.1.3 (Python 3.11.13)
+| http-enum: 
+|   /login/: Login page
+|_  /register/: Potentially interesting folder
+|_http-server-header: Werkzeug/3.1.3 Python/3.11.13
+8089/tcp open     http          nginx 1.29.0
+| http-enum: 
+|_  /login/: Login page
+|_
+|_http-server-header: nginx/1.29.0
+8090/tcp open     opsmessaging?
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|_    Content-Security-Policy-Report-Only: default-src 'self' https://*.sentry.io https://analytics.lightdash.com https://*.usepylon.com https://*.pusher.com wss://*.pusher.com https://*.headwayapp.co https://headway-widget.net https://*.posthog.com https://*.intercom.com https://*.intercom.io wss://*.intercom.io https://*.intercomcdn.com https://*.rudderlabs.com https://www.googleapis.com https://apis.google.com https://accounts.google.com https://vega.github.io https://cdn.jsdelivr.net/npm/monaco-editor@0.43.0/ https://*.lightdash.cloud;img-src 'self' data: https://*;frame-src 'self' https://*;frame-ancestors 'self';worker-src 'self' blob: https://*.sentry.io https://analytics.lightdash.com https://*.usepylon.com https://*.pusher.com wss://*.pusher.com https://*.headwayapp.co https://headway-widget.net https://*.posthog.com https://*.intercom.com https://*.intercom.io wss://
+9002/tcp open     http          Golang net/http server
+
+
+Nmap scan report for 10.10.10.13
+PORT     STATE    SERVICE    VERSION
+22/tcp   open     ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+3306/tcp open     mysql      MySQL 5.7.37
+| vulners: 
+|   cpe:/a:mysql:mysql:5.7.37: 
+|_    	CVE-2024-21057	4.9	https://vulners.com/cve/CVE-2024-21057
+5432/tcp open     postgresql PostgreSQL DB 14.1 - 14.6
+
+
+Nmap scan report for 10.10.10.14
+PORT     STATE    SERVICE  VERSION
+80/tcp   open     http     nginx
+1433/tcp open     ms-sql-s Microsoft SQL Server 2017 14.00.3465
+8083/tcp open     http     nginx
+| http-enum: 
+|   /robots.txt: Robots file
+|_  /api/: Potentially interesting folder
+8084/tcp open     http     nginx
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+8087/tcp open     http     nginx
+8088/tcp open     http     nginx
+8089/tcp open     http     nginx
+
+
+Nmap scan report for 10.10.10.15
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http            VMware ESXi Server httpd
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+427/tcp  closed svrloc
+443/tcp  open   ssl/http        VMware Server http config
+| vmware-version: 
+|   Server version: VMware ESXi 6.7.0
+|   Build: 17167734
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+5988/tcp closed wbem-http
+5989/tcp closed wbem-https
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/soap        gSOAP 2.8
+| http-phpmyadmin-dir-traversal: 
+|   VULNERABLE:
+|   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2005-3299
+|       PHP file inclusion vulnerability in grab_globals.lib.php in phpMyAdmin 2.6.4 and 2.6.4-pl1 allows remote attackers to include local files via the $__redirect parameter, possibly involving the subform array.
+|       
+|     Disclosure date: 2005-10-nil
+|     Extra information:
+|       ../../../../../etc/passwd not found.
+|   
+|     References:
+|       http://www.exploit-db.com/exploits/1244/
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2005-3299
+
+
+Nmap scan report for 10.10.10.17
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http    nginx 1.18.0 (Ubuntu)
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+8085/tcp open     http    nginx 1.17.5
+|_http-server-header: nginx/1.17.5
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+8087/tcp open     http    nginx 1.25.2
+|_http-server-header: nginx/1.25.2
+| http-enum: 
+|   /.htaccess: Incorrect permissions on .htaccess or .htpasswd files
+|_  /manifest.json: Manifest JSON File
+8088/tcp open     http    nginx 1.17.5
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-server-header: nginx/1.17.5
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+8089/tcp open     http    nginx 1.17.5
+|_http-server-header: nginx/1.17.5
+|_http-trane-info: Problem with XML parsing of /evox/about
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+8090/tcp open     http    nginx 1.17.5
+|_http-
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: nginx/1.17.5
+8093/tcp open     unknown
+8099/tcp open     http    nginx 1.17.5
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-server-header: nginx/1.17.5
+
+
+Nmap scan report for 10.10.10.18
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http    nginx 1.25.2
+|_http-server-header: nginx/1.25.2
+
+
+Nmap scan report for 10.10.10.19
+PORT     STATE    SERVICE         VERSION
+80/tcp   open     http
+| http-aspnet-debug: 
+|_  status: DEBUG is enabled
+135/tcp  open     msrpc           Microsoft Windows RPC
+139/tcp  open     netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp  open     ssl/https
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  BID:70574  CVE:CVE-2014-3566
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+445/tcp  open     microsoft-ds    Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3003/tcp open     ssl/cgms?
+3389/tcp open     ms-wbt-server   Microsoft Terminal Services
+4242/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+4444/tcp open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+4899/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+4900/tcp open     ssl/hfcs?
+5050/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+itre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+5985/tcp open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8291/tcp filtered unknown
+9080/tcp open     ssl/glrpc?
+9081/tcp open     ssl/cisco-aqos?
+9090/tcp open     ssl/zeus-admin?
+9200/tcp open     ssl/wap-wsp?
+
+
+Host script results:
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-061: No accounts left to try
+|_smb-vuln-ms10-054: false
+
+
+Nmap scan report for 10.10.10.20
+PORT     STATE    SERVICE     VERSION
+80/tcp   open     http        nginx
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-trane-info: Problem with XML parsing of /evox/about
+139/tcp  open     netbios-ssn Samba smbd 4
+443/tcp  open     ssl/http    nginx
+445/tcp  open     netbios-ssn Samba smbd 4
+3261/tcp open     iscsi       Synology DSM Snapshot Replication iSCSI LUN
+5000/tcp open     http        nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+5001/tcp open     ssl/http    nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+5357/tcp open     http        nginx
+
+
+Host script results:
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [9]
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: ERROR: Server returned less data than it was supposed to (one or more fields are missing); aborting [9]
+|_smb-vuln-ms10-054: false
+
+
+Nmap scan report for 10.10.10.21
+PORT     STATE    SERVICE  VERSION
+22/tcp   open     ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http     nginx 1.25.2
+|_http-server-header: nginx/1.25.2
+| http-enum: 
+|_  /cert/: Potentially interesting folder
+443/tcp  open     ssl/http nginx 1.25.2
+|_http-server-header: nginx/1.25.2
+
+Nmap scan report for 10.10.10.22
+PORT     STATE    SERVICE VERSION
+22/tcp   open     ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp   open     http    nginx 1.25.2
+|_http-server-header: nginx/1.25.2
+
+
+Nmap scan report for 10.10.10.23
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http
+443/tcp  open   ssl/https       VMware ESXi SOAP API 8.0.2
+| vmware-version: 
+|   Server version: VMware ESXi 8.0.2
+|   Build: 22380479
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+5988/tcp closed wbem-http
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/glrpc?
+
+
+Nmap scan report for 10.10.10.24
+PORT     STATE  SERVICE         VERSION
+22/tcp   closed ssh
+80/tcp   open   http
+443/tcp  open   ssl/https       VMware ESXi SOAP API 8.0.2
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+| http-enum: 
+|_  /cgi-bin/mj_wwwusr: Majordomo2 Mailing List
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+| vmware-version: 
+|   Server version: VMware ESXi 8.0.2
+|   Build: 22380479
+|   Locale version: INTL 000
+|   OS type: vmnix-x86
+|_  Product Line ID: embeddedEsx
+902/tcp  open   ssl/vmware-auth VMware Authentication Daemon 1.10 (Uses VNC, SOAP)
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+5988/tcp closed wbem-http
+8000/tcp open   http-alt?
+8300/tcp open   tmi?
+9080/tcp open   ssl/glrpc?
+
+Nmap scan report for 10.10.10.25
+PORT     STATE    SERVICE         VERSION
+80/tcp   open     http
+| http-aspnet-debug: 
+|_  status: DEBUG is enabled
+135/tcp  open     msrpc           Microsoft Windows RPC
+139/tcp  open     netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp  open     ssl/https
+| http-aspnet-debug: 
+|_  status: DEBUG is enabled
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  BID:70574  CVE:CVE-2014-3566
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA
+|     References:
+|       https://www.openssl.org/~bodo/ssl-poodle.pdf
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|       https://www.securityfocus.com/bid/70574
+|_      https://www.imperialviolet.org/2014/10/14/poodle.html
+445/tcp  open     microsoft-ds    Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3003/tcp open     ssl/cgms?
+3389/tcp open     ms-wbt-server   Microsoft Terminal Services
+4242/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+4444/tcp open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+4899/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+4900/tcp open     ssl/hfcs?
+5050/tcp open     ssl/http        Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+5985/tcp open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8291/tcp filtered unknown
+9080/tcp open     ssl/glrpc?
+9081/tcp open     ssl/cisco-aqos?
+9090/tcp open     ssl/zeus-admin?
+9200/tcp open     ssl/wap-wsp?
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+|_samba-vuln-cve-2012-1182: No accounts left to try
+
+
+
+Nmap scan report for 10.10.10.26
+PORT     STATE    SERVICE       VERSION
+135/tcp  open     msrpc         Microsoft Windows RPC
+139/tcp  open     netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open     microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open     ms-sql-s      Microsoft SQL Server 2017 14.00.3356
+2383/tcp open     ms-olap4?
+3389/tcp open     ms-wbt-server Microsoft Terminal Services
+5985/tcp open     http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8000/tcp open     http          Uvicorn
+|_http-server-header: uvicorn
+8002/tcp open     http          Uvicorn
+|_http-server-header: uvicorn
+8080/tcp open     http          SimpleHTTPServer 0.6 (Python 3.13.5)
+| http-enum: 
+|   /backup/: Possible backup
+|_  /api/: Potentially interesting folder
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-iis-webdav-vuln: WebDAV is DISABLED. Server is not currently vulnerable.
+|_http-server-header: SimpleHTTP/0.6 Python/3.13.5
+|_
+
+Host script results:
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: No accounts left to try
+
+
+
+Nmap scan report for 10.10.10.27
+PORT     STATE    SERVICE    VERSION
+22/tcp   open     ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+3306/tcp open     mysql      MySQL 8.0.42-0ubuntu0.20.04.1
+| vulners: 
+|   cpe:/a:mysql:mysql:8.0.42-0ubuntu0.20.04.1: 
+|_    	NODEJS:602	0.0	https://vulners.com/nodejs/NODEJS:602
+5432/tcp open     postgresql PostgreSQL DB 14.10 - 14.11
+
+
+Nmap scan report for 10.10.10.28
+PORT      STATE    SERVICE               VERSION
+22/tcp    open     ssh                   OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp    open     http                  Caddy http
+|_http-server-header: Caddy
+111/tcp   open     rpcbind               2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  3           2049/udp   nfs
+|   100003  3           2049/udp6  nfs
+|   100003  3,4         2049/tcp   nfs
+|   100003  3,4         2049/tcp6  nfs
+|   100005  1,2,3      34497/tcp6  mountd
+|   100005  1,2,3      35174/udp   mountd
+|   100005  1,2,3      36545/tcp   mountd
+|   100005  1,2,3      58678/udp6  mountd
+|   100021  1,3,4      37179/tcp   nlockmgr
+|   100021  1,3,4      43405/udp   nlockmgr
+|   100021  1,3,4      45152/udp6  nlockmgr
+|   100021  1,3,4      46505/tcp6  nlockmgr
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+443/tcp   open     ssl/https
+2049/tcp  open     nfs                   3-4 (RPC #100003)
+3000/tcp  open     http                  Uvicorn
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-server-header: uvicorn
+3005/tcp  open     deslogin?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     X-Powered-By: Next.js
+|     ETag: "16cfly1zdaw2dd"
+|     Content-Type: text/html; charset=utf-8
+|     Content-Length: 3073
+|     Vary: Accept-Encoding
+|     Date: Fri, 12 Dec 2025 01:36:30 GMT
+|     Connection: close
+|     <!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>Wren AI</title><link rel="icon" href="/favicon.ico"/><meta name="next-head-count" content="4"/><style data-styled="" data-styled-version="5.3.6">.jbthUw{position:absolute;top:48px;left:0;right:0;bottom:0;z-index:9999;background-color:white;display:none;}/*!sc*/
+|     .jbthUw.isShow{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}/*!sc*/
+|     data-styled.g1[id="PageLoading__Wrapper-sc-c99f9b-0"]{content:"jbthUw,"}/*!sc*/
+|     </style><link rel="preload" href="/_next/static/css/0f621d120d6c9499.css" as="style"/><link rel="stylesheet" href="/_next/static/css/0f621d120d6
+5001/tcp  open     http                  Uvicorn
+| http-enum: 
+|_  /ui/: VMWare
+|_http-server-header: uvicorn
+5432/tcp  open     postgresql            PostgreSQL DB 9.6.0 or later
+5555/tcp  open     http                  Uvicorn
+|_http-server-header: uvicorn
+8000/tcp  open     http                  Uvicorn
+|_http-server-header: uvicorn
+8008/tcp  open     nagios-nsca           Nagios NSCA
+8087/tcp  open     http                  nginx
+| http-enum: 
+|_  /robots.txt: Robots file
+8291/tcp  filtered unknown
+9002/tcp  open     http                  Cowboy httpd
+|_http-server-header: Cowboy
+10000/tcp open     ssl/snet-sensor-mgmt?
+
+
+Nmap scan report for 10.10.10.29
+PORT     STATE    SERVICE    VERSION
+22/tcp   open     ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+5432/tcp open     postgresql PostgreSQL DB 14.10 - 14.11
+7001/tcp open     http       Golang net/http server
+
+
+Nmap scan report for 10.10.10.111
+PORT     STATE    SERVICE    VERSION
+22/tcp   open     ssh        OpenSSH 9.6p1 Ubuntu 3ubuntu13.14 (Ubuntu Linux; protocol 2.0)
+5432/tcp open     postgresql PostgreSQL DB 9.6.0 or later
+
+
+Nmap scan report for 10.10.10.135
+PORT      STATE    SERVICE    VERSION
+22/tcp    open     ssh        OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+80/tcp    open     http       Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+5432/tcp  open     postgresql PostgreSQL DB 12.14 - 12.18
+| vulners: 
+|   cpe:/a:postgresql:postgresql:12: 
+8291/tcp  filtered unknown
+20221/tcp open     http       nginx 1.17.5
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+|_http-server-header: nginx/1.17.5
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+
+
