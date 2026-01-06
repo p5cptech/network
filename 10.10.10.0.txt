@@ -694,7 +694,10 @@ PORT      STATE    SERVICE               VERSION
 9002/tcp  open     http                  Cowboy httpd
 |_http-server-header: Cowboy
 10000/tcp open     ssl/snet-sensor-mgmt?
-
+Export list for 10.10.10.28:
+/mnt/nfs/vmware10.12 10.10.10.12
+/mnt/nfs/general     10.10.10.29
+Setting credentials: elvia_predovic:oPSwzOoe
 
 Nmap scan report for 10.10.10.29
 PORT     STATE    SERVICE    VERSION
