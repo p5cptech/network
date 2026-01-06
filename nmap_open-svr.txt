@@ -1,0 +1,920 @@
+# Nmap 7.94SVN scan initiated Mon Jan  5 13:45:24 2026 as: nmap -A -sV -v -iL open-svr.txt -oN nmap_open-svr.txt
+Nmap scan report for 192.168.1.29
+Host is up (0.058s latency).
+Not shown: 983 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+80/tcp    open  http               Microsoft IIS httpd 7.5
+|_http-server-header: Microsoft-IIS/7.5
+|_http-title: Site doesn't have a title.
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+111/tcp   open  rpcbind            2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100003  3           2049/tcp   nfs
+|_  100005  3           1063/tcp   mountd
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds
+1063/tcp  open  mountd             3 (RPC #100005)
+1433/tcp  open  ms-sql-s           Microsoft SQL Server 2012
+| ssl-cert: Subject: commonName=ADR-BACKUP
+| Issuer: commonName=ADR-BACKUP
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-03-14T10:48:09
+| Not valid after:  2028-03-11T10:48:09
+| MD5:   294e:83db:26df:25bb:3ec8:4777:6643:753b
+|_SHA-1: c6fe:41b8:cd83:7ca6:e718:150e:bbf5:6f89:cd80:ba77
+|_ssl-date: 2026-01-05T06:17:18+00:00; -34m04s from scanner time.
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+2049/tcp  open  nfs                3 (RPC #100003)
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ssl/ms-wbt-server?
+| ssl-cert: Subject: commonName=ADR-BACKUP
+| Issuer: commonName=ADR-BACKUP
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-10-20T20:16:36
+| Not valid after:  2026-04-21T20:16:36
+| MD5:   183c:b67d:4064:882c:7306:5401:71f0:5a5c
+|_SHA-1: b766:9131:141e:310b:223d:240c:5c3a:e5a5:8c74:a1eb
+|_ssl-date: 2026-01-05T06:17:19+00:00; -34m04s from scanner time.
+6129/tcp  open  damewaremr         DameWare Mini Remote Control
+9876/tcp  open  sd?
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49160/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: ADR-BACKUP
+|   NetBIOS computer name: ADR-BACKUP\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2026-01-05T13:15:29+07:00
+| smb2-security-mode: 
+|   2:1:0: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: ADR-BACKUP, NetBIOS user: <unknown>, NetBIOS MAC: d4:be:d9:c2:d6:ba (Dell)
+| Names:
+|   ADR-BACKUP<20>       Flags: <unique><active>
+|   ADR-BACKUP<00>       Flags: <unique><active>
+|_  WORKGROUP<00>        Flags: <group><active>
+|_clock-skew: mean: -1h58m02s, deviation: 3h07m45s, median: -34m04s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2026-01-05T06:15:19
+|_  start_date: 2024-10-04T01:29:32
+
+Nmap scan report for 192.168.1.48
+Host is up (0.0018s latency).
+Not shown: 984 closed tcp ports (conn-refused)
+PORT      STATE SERVICE            VERSION
+80/tcp    open  http               Microsoft IIS httpd 7.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title.
+|_http-server-header: Microsoft-IIS/7.5
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Windows Server 2008 R2 Standard 7601 Service Pack 1 microsoft-ds
+1433/tcp  open  ms-sql-s           Microsoft SQL Server 2012
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-10-01T11:03:50
+| Not valid after:  2055-10-01T11:03:50
+| MD5:   a00f:987c:257e:a439:4549:283a:a92b:c381
+|_SHA-1: 68ed:74fc:d635:da6b:19ab:1ae3:dc6e:a6c0:8810:0130
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2026-01-05T06:43:45+00:00; -7m38s from scanner time.
+2382/tcp  open  ms-olap3?
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+2383/tcp  open  ms-olap4?
+3389/tcp  open  ssl/ms-wbt-server?
+|_ssl-date: 2026-01-05T06:43:43+00:00; -7m39s from scanner time.
+| ssl-cert: Subject: commonName=APPSERVER07
+| Issuer: commonName=APPSERVER07
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-08-24T09:17:37
+| Not valid after:  2026-02-23T09:17:37
+| MD5:   15ba:f3b2:7eac:5c34:35a1:a18d:a523:8b16
+|_SHA-1: bad1:66aa:0b54:8ab1:6be3:d7ac:431c:b552:ff24:cd9f
+5800/tcp  open  vnc-http           TightVNC (user: appserver07; VNC TCP port: 5900)
+| http-methods: 
+|_  Supported Methods: GET
+|_http-title: TightVNC desktop [appserver07]
+5900/tcp  open  vnc                VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     VNC Authentication (2)
+|     Tight (16)
+|   Tight auth subtypes: 
+|_    STDV VNCAUTH_ (2)
+8088/tcp  open  http               Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49163/tcp open  unknown
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2:1:0: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-01-05T06:41:59
+|_  start_date: 2025-10-01T11:02:30
+| smb-os-discovery: 
+|   OS: Windows Server 2008 R2 Standard 7601 Service Pack 1 (Windows Server 2008 R2 Standard 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_server_2008::sp1
+|   Computer name: APPSERVER07
+|   NetBIOS computer name: APPSERVER07\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2026-01-05T13:41:59+07:00
+| nbstat: NetBIOS name: APPSERVER07, NetBIOS user: <unknown>, NetBIOS MAC: 78:2b:cb:76:79:89 (Dell)
+| Names:
+|   APPSERVER07<00>      Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|_  APPSERVER07<20>      Flags: <unique><active>
+|_clock-skew: mean: -1h31m35s, deviation: 3h07m43s, median: -7m39s
+
+Nmap scan report for 192.168.1.23
+Host is up (0.055s latency).
+Not shown: 988 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| ssl-cert: Subject: commonName=APPSERVER08/organizationName=Dell Inc/stateOrProvinceName=TX/countryName=US
+| Issuer: commonName=APPSERVER08/organizationName=Dell Inc/stateOrProvinceName=TX/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-03-20T08:21:30
+| Not valid after:  2017-03-04T16:39:41
+| MD5:   5a98:74ed:f315:50bb:b362:3df5:d338:1c2b
+|_SHA-1: 20f5:3db2:338f:f030:e29d:35c2:203b:2733:1318:9f7b
+|_ssl-date: 2026-01-05T06:57:27+00:00; +6m05s from scanner time.
+|_http-title: OpenManage&trade;
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-08-06T10:50:49
+| Not valid after:  2055-08-06T10:50:49
+| MD5:   9b2c:eea1:cfe6:032d:a766:23d7:a55a:fa27
+|_SHA-1: 50eb:41ba:47a3:0da0:1ed0:5072:ebf9:f9b0:f26e:71b7
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2026-01-05T06:57:27+00:00; +6m05s from scanner time.
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Bad Request
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49155/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Bad Request
+49156/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49157/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| nbstat: NetBIOS name: APPSERVER08, NetBIOS user: <unknown>, NetBIOS MAC: 18:66:da:f3:5e:9c (Dell)
+| Names:
+|   APPSERVER08<00>      Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|_  APPSERVER08<20>      Flags: <unique><active>
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-01-05T06:55:43
+|_  start_date: 2025-08-04T23:39:42
+|_clock-skew: mean: 6m04s, deviation: 0s, median: 6m04s
+
+Nmap scan report for 192.168.1.57
+Host is up (0.0012s latency).
+Not shown: 987 closed tcp ports (conn-refused)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1311/tcp  open  ssl/http      Apache Tomcat/Coyote JSP engine 1.1
+|_http-server-header: Apache-Coyote/1.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_ssl-date: 2026-01-05T06:53:42+00:00; +2m18s from scanner time.
+|_http-title: OpenManage&trade;
+| ssl-cert: Subject: commonName=APPSERVER09/organizationName=Dell Inc/stateOrProvinceName=TX/countryName=US
+| Issuer: commonName=APPSERVER09/organizationName=Dell Inc/stateOrProvinceName=TX/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2017-03-20T03:28:39
+| Not valid after:  2017-03-04T11:46:50
+| MD5:   2121:fde8:5f9b:1933:6b1c:65d5:d0d0:5391
+|_SHA-1: b177:a413:5d90:bca5:e28f:e5fc:da55:810b:2e35:30fb
+1433/tcp  open  ms-sql-s      Microsoft SQL Server 2016 13.00.4001.00; SP1
+|_ssl-date: 2026-01-05T06:53:41+00:00; +2m19s from scanner time.
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2024-12-03T05:38:29
+| Not valid after:  2054-12-03T05:38:29
+| MD5:   e23e:916e:7519:cda7:22ed:239c:578e:6152
+|_SHA-1: e104:9814:0c77:5157:31c0:3b33:db29:5450:0dd8:3587
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+3389/tcp  open  ms-wbt-server Microsoft Terminal Service
+8088/tcp  open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+|_http-title: 403 Forbidden
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+49152/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Bad Request
+49153/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49154/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Bad Request
+49155/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49156/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Bad Request
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49157/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Bad Request
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-01-05T06:52:02
+|_  start_date: 2023-05-04T01:39:46
+|_clock-skew: mean: 2m18s, deviation: 0s, median: 2m17s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+Nmap scan report for 192.168.1.11
+Host is up (0.0019s latency).
+Not shown: 994 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open  ms-sql-s      Microsoft SQL Server 2012 11.00.2100.00; RTM
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: 2026-01-05T06:50:20+00:00; -1m02s from scanner time.
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2025-04-09T04:14:35
+| Not valid after:  2055-04-09T04:14:35
+| MD5:   7650:6a8e:1e62:af90:85fa:9895:687d:80cd
+|_SHA-1: 72cf:2ef6:0003:e38f:0053:d65e:2ec1:cc09:6680:b7b5
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=LENOVO-LA0X1245
+| Issuer: commonName=LENOVO-LA0X1245
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-12-09T07:32:39
+| Not valid after:  2026-06-10T07:32:39
+| MD5:   d908:df4d:1381:3cc9:d6d7:adde:77ff:d8da
+|_SHA-1: d73e:bb87:1490:feeb:7444:8f07:396d:36c8:a10d:919a
+|_ssl-date: 2026-01-05T06:50:20+00:00; -1m02s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: LENOVO-LA0X1245
+|   NetBIOS_Domain_Name: LENOVO-LA0X1245
+|   NetBIOS_Computer_Name: LENOVO-LA0X1245
+|   DNS_Domain_Name: LENOVO-LA0X1245
+|   DNS_Computer_Name: LENOVO-LA0X1245
+|   Product_Version: 10.0.14393
+|_  System_Time: 2026-01-05T06:48:22+00:00
+8088/tcp open  http          Apache httpd 2.2.17 ((Win32) PHP/5.3.5)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.2.17 (Win32) PHP/5.3.5
+|_http-title: Site doesn't have a title (text/html).
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| nbstat: NetBIOS name: LENOVO-LA0X1245, NetBIOS user: <unknown>, NetBIOS MAC: 30:3e:a7:22:8b:a8 (Intel Corporate)
+| Names:
+|   LENOVO-LA0X1245<20>  Flags: <unique><active>
+|   LENOVO-LA0X1245<00>  Flags: <unique><active>
+|_  WORKGROUP<00>        Flags: <group><active>
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_clock-skew: mean: -1m02s, deviation: 0s, median: -1m02s
+| smb2-time: 
+|   date: 2026-01-05T06:48:41
+|_  start_date: 2025-03-03T07:40:26
+
+Nmap scan report for 172.22.1.57
+Host is up (0.00080s latency).
+Not shown: 978 closed tcp ports (conn-refused)
+PORT      STATE SERVICE         VERSION
+80/tcp    open  http            OpenResty web app server
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: openresty
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-cors: HEAD GET POST PUT DELETE OPTIONS
+135/tcp   open  msrpc           Microsoft Windows RPC
+139/tcp   open  netbios-ssn     Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http        OpenResty web app server
+|_http-title: Site doesn't have a title (text/html).
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+|_http-cors: HEAD GET POST PUT DELETE OPTIONS
+|_http-server-header: openresty
+| ssl-cert: Subject: commonName=System CA Service
+| Issuer: commonName=System CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-04-10T18:42:31
+| Not valid after:  2035-04-08T18:42:31
+| MD5:   8f81:83c2:7f0e:2705:8d14:31db:2f2e:8a23
+|_SHA-1: 77e9:486b:eff0:26bc:5264:d0c9:af5c:4c84:316c:c0f7
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+445/tcp   open  microsoft-ds?
+3389/tcp  open  ms-wbt-server   Microsoft Terminal Services
+|_ssl-date: 2026-01-05T06:50:47+00:00; -36s from scanner time.
+| ssl-cert: Subject: commonName=LENOVO-LA0X1930
+| Issuer: commonName=LENOVO-LA0X1930
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-09-08T12:05:50
+| Not valid after:  2026-03-10T12:05:50
+| MD5:   0aac:2ad5:6e25:4e18:4a2c:06cc:58a8:5bd2
+|_SHA-1: 7153:8e70:621a:598c:cc69:745a:8175:df6e:0d0a:0b8f
+5357/tcp  open  http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+6666/tcp  open  irc?
+|_irc-info: Unable to open connection
+7070/tcp  open  ssl/realserver?
+| ssl-cert: Subject: commonName=AnyDesk Client
+| Issuer: commonName=AnyDesk Client
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-04-15T02:30:00
+| Not valid after:  2075-04-03T02:30:00
+| MD5:   8c9b:e36a:0ee5:07e3:da5b:f234:f727:af1a
+|_SHA-1: de6f:1014:3841:f000:6ada:0398:2e70:0735:877d:672a
+|_ssl-date: TLS randomness does not represent time
+8000/tcp  open  http-alt
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+|_http-title: 404 - Not Found
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 
+|     Set-Cookie: JSESSIONID=538FD745FF23C373FA90CF5DB5664733; Path=/; HttpOnly
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 343
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>404 - Not Found</title>
+|     </head>
+|     <body>
+|     <div style="color: red">
+|     &nbsp;&nbsp;Page not found, please contact the administrator!
+|     </div>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 404 
+|     Set-Cookie: JSESSIONID=275CCB246457525F989C1221822104E1; Path=/; HttpOnly
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 343
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>404 - Not Found</title>
+|     </head>
+|     <body>
+|     <div style="color: red">
+|     &nbsp;&nbsp;Page not found, please contact the administrator!
+|     </div>
+|     </body>
+|     </html>
+|   Socks5, X11Probe: 
+|     HTTP/1.1 400 
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 264
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>400 - Bad Request</title>
+|     </head>
+|     <body>
+|     Request
+|     </body>
+|_    </html>
+8443/tcp  open  ssl/https-alt
+| ssl-cert: Subject: commonName=System CA Service
+| Issuer: commonName=System CA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2025-04-10T18:42:31
+| Not valid after:  2035-04-08T18:42:31
+| MD5:   8f81:83c2:7f0e:2705:8d14:31db:2f2e:8a23
+|_SHA-1: 77e9:486b:eff0:26bc:5264:d0c9:af5c:4c84:316c:c0f7
+| http-methods: 
+|_  Supported Methods: OPTIONS GET HEAD POST
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 
+|     Set-Cookie: JSESSIONID=B18EC3F88B33E453CB6338B057BE2D05; Path=/; Secure; HttpOnly
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 343
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>404 - Not Found</title>
+|     </head>
+|     <body>
+|     <div style="color: red">
+|     &nbsp;&nbsp;Page not found, please contact the administrator!
+|     </div>
+|     </body>
+|     </html>
+|   GetRequest: 
+|     HTTP/1.1 404 
+|     Set-Cookie: JSESSIONID=31DF2CA87714B1835F500DE896DF5381; Path=/; Secure; HttpOnly
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 343
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>404 - Not Found</title>
+|     </head>
+|     <body>
+|     <div style="color: red">
+|     &nbsp;&nbsp;Page not found, please contact the administrator!
+|     </div>
+|     </body>
+|     </html>
+|   HTTPOptions: 
+|     HTTP/1.1 200 
+|     Allow: OPTIONS, GET, HEAD, POST
+|     Content-Length: 0
+|     Date: Mon, 05 Jan 2026 06:45:59 GMT
+|     Connection: close
+|   RTSPRequest: 
+|     HTTP/1.1 400 
+|     Content-Type: text/html;charset=UTF-8
+|     Content-Length: 264
+|     Date: Mon, 05 Jan 2026 06:46:05 GMT
+|     Connection: close
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+|     <html xmlns="http://www.w3.org/1999/xhtml">
+|     <head>
+|     <title>400 - Bad Request</title>
+|     </head>
+|     <body>
+|     Request
+|     </body>
+|_    </html>
+|_http-title: 404 - Not Found
+8888/tcp  open  sun-answerbook?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92405&sequence=7270996&unit=ACDG&id=0
+|     id=0
+|   FourOhFourRequest: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92399&sequence=7270972&unit=ACDG&id=0
+|     id=0
+|   GetRequest: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92396&sequence=7270962&unit=ACDG&id=0
+|     id=0
+|   Help: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92407&sequence=7271007&unit=ACDG&id=0
+|     id=0
+|   LPDString: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92414&sequence=7271039&unit=ACDG&id=0
+|     id=0
+|   LSCP: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92401&sequence=7270980&unit=ACDG&id=0
+|     id=0
+|   RTSPRequest: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92403&sequence=7270989&unit=ACDG&id=0
+|     id=0
+|   SMBProgNeg: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92412&sequence=7271032&unit=ACDG&id=0
+|     id=0
+|   SSLSessionReq: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92408&sequence=7271014&unit=ACDG&id=0
+|     id=0
+|   TLSSessionReq: 
+|     POST http://:0/deleteDvr HTTP/1.1
+|     Content-Length: 4
+|     Content-Type: application/octet-stream
+|     CFL_Asynch:operation=deleteDvr&session=92410&sequence=7271022&unit=ACDG&id=0
+|_    id=0
+9000/tcp  open  cslistener?
+| fingerprint-strings: 
+|   SIPOptions: 
+|_    HTTP/1.0 999 Unknown
+9080/tcp  open  glrpc?
+9090/tcp  open  zeus-admin?
+9099/tcp  open  unknown
+9100/tcp  open  jetdirect?
+9102/tcp  open  jetdirect?
+9200/tcp  open  wap-wsp?
+9500/tcp  open  ismserver?
+9900/tcp  open  iua?
+| fingerprint-strings: 
+|   GenericLines, Help, RTSPRequest, SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Access-Control-Allow-Headers: x-requested-with,content-type,x-dss-object-uri,x-dss-object-position,x-dss-next-append-position,x-dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request-id,x-dss-callback,x-csrf-token
+|     Access-Control-Allow-Methods: PUT,POST,GET,OPTIONS,DELETE
+|     Access-Control-Allow-Origin: *
+|     Access-Control-Expose-Headers: x-requested-with,content-type,x-dss-object-uri,x-dss-object-position,x-dss-next-append-position,x-dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request-id,x-dss-callback
+|     X-Dss-Errcode: 100024
+|     X-Dss-Errmsg: Check Token Failed
+|     X-Dss-Request-Id: 337be0ed-ea02-11f0-91ef-303ea7229499
+|     Date: Mon, 05 Jan 2026 06:46:02 GMT
+|     Content-Length: 0
+|   HTTPOptions: 
+|     HTTP/1.0 202 Accepted
+|     Access-Control-Allow-Headers: x-requested-with,content-type,x-dss-object-uri,x-dss-object-position,x-dss-next-append-position,x-dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request-id,keep-file-open,x-csrf-token
+|     Access-Control-Allow-Methods: PUT,POST,GET,OPTIONS,DELETE
+|     Access-Control-Allow-Origin: *
+|     Access-Control-Expose-Headers: x-requested-with,content-type,x-dss-object-uri,x-dss-object-position,x-dss-next-append-position,x-dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request-id
+|     Date: Mon, 05 Jan 2026 06:46:02 GMT
+|_    Content-Length: 0
+19801/tcp open  unknown
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 404 
+|     Content-Type: text/html;charset=utf-8
+|     Content-Language: en
+|     Content-Length: 431
+|     Date: Mon, 05 Jan 2026 06:46:07 GMT
+|     Connection: close
+|     <!doctype html><html lang="en"><head><title>HTTP Status 404 
+|     Found</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 404 
+|     Found</h1></body></html>
+|   RTSPRequest: 
+|     HTTP/1.1 400 
+|     Content-Type: text/html;charset=utf-8
+|     Content-Language: en
+|     Content-Length: 435
+|     Date: Mon, 05 Jan 2026 06:46:07 GMT
+|     Connection: close
+|     <!doctype html><html lang="en"><head><title>HTTP Status 400 
+|     Request</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP Status 400 
+|_    Request</h1></body></html>
+6 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8000-TCP:V=7.94SVN%I=7%D=1/5%Time=695B5E4B%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,227,"HTTP/1\.1\x20404\x20\r\nSet-Cookie:\x20JSESSIONID=275CC
+SF:B246457525F989C1221822104E1;\x20Path=/;\x20HttpOnly\r\nContent-Type:\x2
+SF:0text/html;charset=UTF-8\r\nContent-Length:\x20343\r\nDate:\x20Mon,\x20
+SF:05\x20Jan\x202026\x2006:45:59\x20GMT\r\nConnection:\x20close\r\n\r\n<!D
+SF:OCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitio
+SF:nal//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.d
+SF:td\">\n\n\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n\t<head>
+SF:\n\t\t<title>404\x20-\x20Not\x20Found</title>\n\t</head>\n\t<body>\n\t\
+SF:t<div\x20style=\"color:\x20red\">\n\t\t\t&nbsp;&nbsp;Page\x20not\x20fou
+SF:nd,\x20please\x20contact\x20the\x20administrator!\n\t\t</div>\n\t</body
+SF:>\n</html>")%r(X11Probe,18D,"HTTP/1\.1\x20400\x20\r\nContent-Type:\x20t
+SF:ext/html;charset=UTF-8\r\nContent-Length:\x20264\r\nDate:\x20Mon,\x2005
+SF:\x20Jan\x202026\x2006:45:59\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOC
+SF:TYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitiona
+SF:l//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd
+SF:\">\n\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n\t<head>\n\t
+SF:\t<title>400\x20-\x20Bad\x20Request</title>\n\t</head>\n\t<body>\n\t\x2
+SF:0\x20\x20\x20400\x20Bad\x20Request\n\t</body>\n</html>")%r(FourOhFourRe
+SF:quest,227,"HTTP/1\.1\x20404\x20\r\nSet-Cookie:\x20JSESSIONID=538FD745FF
+SF:23C373FA90CF5DB5664733;\x20Path=/;\x20HttpOnly\r\nContent-Type:\x20text
+SF:/html;charset=UTF-8\r\nContent-Length:\x20343\r\nDate:\x20Mon,\x2005\x2
+SF:0Jan\x202026\x2006:45:59\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYP
+SF:E\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//
+SF:EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">
+SF:\n\n\n<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n\t<head>\n\t\
+SF:t<title>404\x20-\x20Not\x20Found</title>\n\t</head>\n\t<body>\n\t\t<div
+SF:\x20style=\"color:\x20red\">\n\t\t\t&nbsp;&nbsp;Page\x20not\x20found,\x
+SF:20please\x20contact\x20the\x20administrator!\n\t\t</div>\n\t</body>\n</
+SF:html>")%r(Socks5,18D,"HTTP/1\.1\x20400\x20\r\nContent-Type:\x20text/htm
+SF:l;charset=UTF-8\r\nContent-Length:\x20264\r\nDate:\x20Mon,\x2005\x20Jan
+SF:\x202026\x2006:45:59\x20GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x2
+SF:0html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"
+SF:\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n\n
+SF:<html\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n\t<head>\n\t\t<titl
+SF:e>400\x20-\x20Bad\x20Request</title>\n\t</head>\n\t<body>\n\t\x20\x20\x
+SF:20\x20400\x20Bad\x20Request\n\t</body>\n</html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8443-TCP:V=7.94SVN%T=SSL%I=7%D=1/5%Time=695B5E4C%P=x86_64-pc-linux-
+SF:gnu%r(GetRequest,22F,"HTTP/1\.1\x20404\x20\r\nSet-Cookie:\x20JSESSIONID
+SF:=31DF2CA87714B1835F500DE896DF5381;\x20Path=/;\x20Secure;\x20HttpOnly\r\
+SF:nContent-Type:\x20text/html;charset=UTF-8\r\nContent-Length:\x20343\r\n
+SF:Date:\x20Mon,\x2005\x20Jan\x202026\x2006:45:59\x20GMT\r\nConnection:\x2
+SF:0close\r\n\r\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x20
+SF:1\.0\x20Transitional//EN\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml
+SF:1-transitional\.dtd\">\n\n\n<html\x20xmlns=\"http://www\.w3\.org/1999/x
+SF:html\">\n\t<head>\n\t\t<title>404\x20-\x20Not\x20Found</title>\n\t</hea
+SF:d>\n\t<body>\n\t\t<div\x20style=\"color:\x20red\">\n\t\t\t&nbsp;&nbsp;P
+SF:age\x20not\x20found,\x20please\x20contact\x20the\x20administrator!\n\t\
+SF:t</div>\n\t</body>\n</html>")%r(HTTPOptions,7D,"HTTP/1\.1\x20200\x20\r\
+SF:nAllow:\x20OPTIONS,\x20GET,\x20HEAD,\x20POST\r\nContent-Length:\x200\r\
+SF:nDate:\x20Mon,\x2005\x20Jan\x202026\x2006:45:59\x20GMT\r\nConnection:\x
+SF:20close\r\n\r\n")%r(FourOhFourRequest,22F,"HTTP/1\.1\x20404\x20\r\nSet-
+SF:Cookie:\x20JSESSIONID=B18EC3F88B33E453CB6338B057BE2D05;\x20Path=/;\x20S
+SF:ecure;\x20HttpOnly\r\nContent-Type:\x20text/html;charset=UTF-8\r\nConte
+SF:nt-Length:\x20343\r\nDate:\x20Mon,\x2005\x20Jan\x202026\x2006:45:59\x20
+SF:GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//
+SF:W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\"http://www\.w3\.or
+SF:g/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n\n\n<html\x20xmlns=\"http:
+SF://www\.w3\.org/1999/xhtml\">\n\t<head>\n\t\t<title>404\x20-\x20Not\x20F
+SF:ound</title>\n\t</head>\n\t<body>\n\t\t<div\x20style=\"color:\x20red\">
+SF:\n\t\t\t&nbsp;&nbsp;Page\x20not\x20found,\x20please\x20contact\x20the\x
+SF:20administrator!\n\t\t</div>\n\t</body>\n</html>")%r(RTSPRequest,18D,"H
+SF:TTP/1\.1\x20400\x20\r\nContent-Type:\x20text/html;charset=UTF-8\r\nCont
+SF:ent-Length:\x20264\r\nDate:\x20Mon,\x2005\x20Jan\x202026\x2006:46:05\x2
+SF:0GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-/
+SF:/W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN\"\x20\"http://www\.w3\.o
+SF:rg/TR/xhtml1/DTD/xhtml1-transitional\.dtd\">\n\n<html\x20xmlns=\"http:/
+SF:/www\.w3\.org/1999/xhtml\">\n\t<head>\n\t\t<title>400\x20-\x20Bad\x20Re
+SF:quest</title>\n\t</head>\n\t<body>\n\t\x20\x20\x20\x20400\x20Bad\x20Req
+SF:uest\n\t</body>\n</html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8888-TCP:V=7.94SVN%I=7%D=1/5%Time=695B5E4C%P=x86_64-pc-linux-gnu%r(
+SF:GetRequest,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\r\nContent-Leng
+SF:th:\x204\r\nContent-Type:\x20application/octet-stream\r\nCFL_Asynch:ope
+SF:ration=deleteDvr&session=92396&sequence=7270962&unit=ACDG&id=0\r\n\r\ni
+SF:d=0")%r(FourOhFourRequest,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\
+SF:r\nContent-Length:\x204\r\nContent-Type:\x20application/octet-stream\r\
+SF:nCFL_Asynch:operation=deleteDvr&session=92399&sequence=7270972&unit=ACD
+SF:G&id=0\r\n\r\nid=0")%r(LSCP,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.
+SF:1\r\nContent-Length:\x204\r\nContent-Type:\x20application/octet-stream\
+SF:r\nCFL_Asynch:operation=deleteDvr&session=92401&sequence=7270980&unit=A
+SF:CDG&id=0\r\n\r\nid=0")%r(RTSPRequest,B2,"POST\x20http://:0/deleteDvr\x2
+SF:0HTTP/1\.1\r\nContent-Length:\x204\r\nContent-Type:\x20application/octe
+SF:t-stream\r\nCFL_Asynch:operation=deleteDvr&session=92403&sequence=72709
+SF:89&unit=ACDG&id=0\r\n\r\nid=0")%r(DNSVersionBindReqTCP,B2,"POST\x20http
+SF:://:0/deleteDvr\x20HTTP/1\.1\r\nContent-Length:\x204\r\nContent-Type:\x
+SF:20application/octet-stream\r\nCFL_Asynch:operation=deleteDvr&session=92
+SF:405&sequence=7270996&unit=ACDG&id=0\r\n\r\nid=0")%r(Help,B2,"POST\x20ht
+SF:tp://:0/deleteDvr\x20HTTP/1\.1\r\nContent-Length:\x204\r\nContent-Type:
+SF:\x20application/octet-stream\r\nCFL_Asynch:operation=deleteDvr&session=
+SF:92407&sequence=7271007&unit=ACDG&id=0\r\n\r\nid=0")%r(SSLSessionReq,B2,
+SF:"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\r\nContent-Length:\x204\r\nCo
+SF:ntent-Type:\x20application/octet-stream\r\nCFL_Asynch:operation=deleteD
+SF:vr&session=92408&sequence=7271014&unit=ACDG&id=0\r\n\r\nid=0")%r(TLSSes
+SF:sionReq,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\r\nContent-Length:
+SF:\x204\r\nContent-Type:\x20application/octet-stream\r\nCFL_Asynch:operat
+SF:ion=deleteDvr&session=92410&sequence=7271022&unit=ACDG&id=0\r\n\r\nid=0
+SF:")%r(SMBProgNeg,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\r\nContent
+SF:-Length:\x204\r\nContent-Type:\x20application/octet-stream\r\nCFL_Async
+SF:h:operation=deleteDvr&session=92412&sequence=7271032&unit=ACDG&id=0\r\n
+SF:\r\nid=0")%r(LPDString,B2,"POST\x20http://:0/deleteDvr\x20HTTP/1\.1\r\n
+SF:Content-Length:\x204\r\nContent-Type:\x20application/octet-stream\r\nCF
+SF:L_Asynch:operation=deleteDvr&session=92414&sequence=7271039&unit=ACDG&i
+SF:d=0\r\n\r\nid=0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9000-TCP:V=7.94SVN%I=7%D=1/5%Time=695B5EA9%P=x86_64-pc-linux-gnu%r(
+SF:SIPOptions,18,"HTTP/1\.0\x20999\x20Unknown\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port9900-TCP:V=7.94SVN%I=7%D=1/5%Time=695B5E4E%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x2
+SF:0text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad
+SF:\x20Request")%r(GetRequest,2BB,"HTTP/1\.0\x20200\x20OK\r\nAccess-Contro
+SF:l-Allow-Headers:\x20x-requested-with,content-type,x-dss-object-uri,x-ds
+SF:s-object-position,x-dss-next-append-position,x-dss-request-id,x-dss-err
+SF:code,x-dss-errmsg,x-dss-request-id,x-dss-callback,x-csrf-token\r\nAcces
+SF:s-Control-Allow-Methods:\x20PUT,POST,GET,OPTIONS,DELETE\r\nAccess-Contr
+SF:ol-Allow-Origin:\x20\*\r\nAccess-Control-Expose-Headers:\x20x-requested
+SF:-with,content-type,x-dss-object-uri,x-dss-object-position,x-dss-next-ap
+SF:pend-position,x-dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request
+SF:-id,x-dss-callback\r\nX-Dss-Errcode:\x20100024\r\nX-Dss-Errmsg:\x20Chec
+SF:k\x20Token\x20Failed\r\nX-Dss-Request-Id:\x20337be0ed-ea02-11f0-91ef-30
+SF:3ea7229499\r\nDate:\x20Mon,\x2005\x20Jan\x202026\x2006:46:02\x20GMT\r\n
+SF:Content-Length:\x200\r\n\r\n")%r(HTTPOptions,241,"HTTP/1\.0\x20202\x20A
+SF:ccepted\r\nAccess-Control-Allow-Headers:\x20x-requested-with,content-ty
+SF:pe,x-dss-object-uri,x-dss-object-position,x-dss-next-append-position,x-
+SF:dss-request-id,x-dss-errcode,x-dss-errmsg,x-dss-request-id,keep-file-op
+SF:en,x-csrf-token\r\nAccess-Control-Allow-Methods:\x20PUT,POST,GET,OPTION
+SF:S,DELETE\r\nAccess-Control-Allow-Origin:\x20\*\r\nAccess-Control-Expose
+SF:-Headers:\x20x-requested-with,content-type,x-dss-object-uri,x-dss-objec
+SF:t-position,x-dss-next-append-position,x-dss-request-id,x-dss-errcode,x-
+SF:dss-errmsg,x-dss-request-id\r\nDate:\x20Mon,\x2005\x20Jan\x202026\x2006
+SF::46:02\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,"HTTP/
+SF:1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charse
+SF:t=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,6
+SF:7,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x
+SF:20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%
+SF:r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:
+SF:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20
+SF:Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port19801-TCP:V=7.94SVN%I=7%D=1/5%Time=695B5E53%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,24A,"HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/html;cha
+SF:rset=utf-8\r\nContent-Language:\x20en\r\nContent-Length:\x20431\r\nDate
+SF::\x20Mon,\x2005\x20Jan\x202026\x2006:46:07\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\n<!doctype\x20html><html\x20lang=\"en\"><head><title>HTTP\x20S
+SF:tatus\x20404\x20\xe2\x80\x93\x20Not\x20Found</title><style\x20type=\"te
+SF:xt/css\">body\x20{font-family:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,\x
+SF:20h3,\x20b\x20{color:white;background-color:#525D76;}\x20h1\x20{font-si
+SF:ze:22px;}\x20h2\x20{font-size:16px;}\x20h3\x20{font-size:14px;}\x20p\x2
+SF:0{font-size:12px;}\x20a\x20{color:black;}\x20\.line\x20{height:1px;back
+SF:ground-color:#525D76;border:none;}</style></head><body><h1>HTTP\x20Stat
+SF:us\x20404\x20\xe2\x80\x93\x20Not\x20Found</h1></body></html>")%r(HTTPOp
+SF:tions,24A,"HTTP/1\.1\x20404\x20\r\nContent-Type:\x20text/html;charset=u
+SF:tf-8\r\nContent-Language:\x20en\r\nContent-Length:\x20431\r\nDate:\x20M
+SF:on,\x2005\x20Jan\x202026\x2006:46:07\x20GMT\r\nConnection:\x20close\r\n
+SF:\r\n<!doctype\x20html><html\x20lang=\"en\"><head><title>HTTP\x20Status\
+SF:x20404\x20\xe2\x80\x93\x20Not\x20Found</title><style\x20type=\"text/css
+SF:\">body\x20{font-family:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,\x20h3,\
+SF:x20b\x20{color:white;background-color:#525D76;}\x20h1\x20{font-size:22p
+SF:x;}\x20h2\x20{font-size:16px;}\x20h3\x20{font-size:14px;}\x20p\x20{font
+SF:-size:12px;}\x20a\x20{color:black;}\x20\.line\x20{height:1px;background
+SF:-color:#525D76;border:none;}</style></head><body><h1>HTTP\x20Status\x20
+SF:404\x20\xe2\x80\x93\x20Not\x20Found</h1></body></html>")%r(RTSPRequest,
+SF:24E,"HTTP/1\.1\x20400\x20\r\nContent-Type:\x20text/html;charset=utf-8\r
+SF:\nContent-Language:\x20en\r\nContent-Length:\x20435\r\nDate:\x20Mon,\x2
+SF:005\x20Jan\x202026\x2006:46:07\x20GMT\r\nConnection:\x20close\r\n\r\n<!
+SF:doctype\x20html><html\x20lang=\"en\"><head><title>HTTP\x20Status\x20400
+SF:\x20\xe2\x80\x93\x20Bad\x20Request</title><style\x20type=\"text/css\">b
+SF:ody\x20{font-family:Tahoma,Arial,sans-serif;}\x20h1,\x20h2,\x20h3,\x20b
+SF:\x20{color:white;background-color:#525D76;}\x20h1\x20{font-size:22px;}\
+SF:x20h2\x20{font-size:16px;}\x20h3\x20{font-size:14px;}\x20p\x20{font-siz
+SF:e:12px;}\x20a\x20{color:black;}\x20\.line\x20{height:1px;background-col
+SF:or:#525D76;border:none;}</style></head><body><h1>HTTP\x20Status\x20400\
+SF:x20\xe2\x80\x93\x20Bad\x20Request</h1></body></html>");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -36s, deviation: 0s, median: -36s
+| nbstat: NetBIOS name: LENOVO-LA0X1930, NetBIOS user: <unknown>, NetBIOS MAC: 30:3e:a7:22:94:96 (Intel Corporate)
+| Names:
+|   LENOVO-LA0X1930<20>  Flags: <unique><active>
+|   LENOVO-LA0X1930<00>  Flags: <unique><active>
+|_  WORKGROUP<00>        Flags: <group><active>
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-01-05T06:49:08
+|_  start_date: N/A
+
+Nmap scan report for 172.21.99.16
+Host is up (0.0032s latency).
+Not shown: 907 filtered tcp ports (no-response), 89 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+8080/tcp open  http         Apache Tomcat 9.0.104
+|_http-title: Apache Tomcat/9.0.104
+|_http-open-proxy: Proxy might be redirecting requests
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Apache Tomcat
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-01-05T06:49:47
+|_  start_date: 2025-11-07T09:32:29
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan  5 13:55:23 2026 -- 7 IP addresses (7 hosts up) scanned in 598.71 seconds
