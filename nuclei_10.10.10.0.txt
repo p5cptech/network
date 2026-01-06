@@ -1,0 +1,131 @@
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.23
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.1
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.3
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.135
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.28
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.20
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.22
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.2
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.13
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.27
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.11
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.14
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.4
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.21
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.19
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.24
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.18
+[caa-fingerprint] [dns] [info] PORT     STATE    SERVICE         VERSION
+[caa-fingerprint] [dns] [info] PORT     STATE    SERVICE     VERSION
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.111
+[caa-fingerprint] [dns] [info] |           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+[caa-fingerprint] [dns] [info] PORT     STATE  SERVICE    VERSION
+[caa-fingerprint] [dns] [info] PORT     STATE  SERVICE         VERSION
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.6
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.9
+[caa-fingerprint] [dns] [info] PORT      STATE    SERVICE               VERSION
+[caa-fingerprint] [dns] [info] Nmap scan report for 10.10.10.8
+[caa-fingerprint] [dns] [info] PORT     STATE    SERVICE  VERSION
+[caa-fingerprint] [dns] [info] itre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+[caa-fingerprint] [dns] [info] |       TLS_RSA_WITH_3DES_EDE_CBC_SHA
+[caa-fingerprint] [dns] [info] PORT     STATE    SERVICE    VERSION
+[caa-fingerprint] [dns] [info] PORT     STATE  SERVICE     VERSION
+[caa-fingerprint] [dns] [info] |           padding-oracle attack, aka the "POODLE" issue
+[caa-fingerprint] [dns] [info] |     Connection
+[caa-fingerprint] [dns] [info] |     Content-Type
+[caa-fingerprint] [dns] [info] PORT     STATE    SERVICE VERSION
+[caa-fingerprint] [dns] [info] |       https
+[caa-fingerprint] [dns] [info] |       http
+[caa-fingerprint] [dns] [info] |     HTTP/1.1 400 Bad Request
+[caa-fingerprint] [dns] [info] |     IDs:  CVE:CVE-2005-3299
+[caa-fingerprint] [dns] [info] |     IDs:  BID:70574  CVE:CVE-2014-3566
+[caa-fingerprint] [dns] [info] |       https
+[caa-fingerprint] [dns] [info] |     Disclosure date
+[caa-fingerprint] [dns] [info] |     Remotes
+[caa-fingerprint] [dns] [info] |     References
+[caa-fingerprint] [dns] [info] |     State
+[caa-fingerprint] [dns] [info] |     Date: Fri, 12 Dec 2025 01:34:10 GMT
+[caa-fingerprint] [dns] [info] |     HTTP/1.0 403 Forbidden
+[caa-fingerprint] [dns] [info] |   100000  2,3,4        111/udp   rpcbind
+[caa-fingerprint] [dns] [info] |   100000  2,3,4        111/tcp   rpcbind
+[caa-fingerprint] [dns] [info] |   10.10.10.4
+[caa-fingerprint] [dns] [info] |     Disclosure date
+[caa-fingerprint] [dns] [info] |     Vary
+[caa-fingerprint] [dns] [info] |   100000  3,4          111/tcp6  rpcbind
+[caa-fingerprint] [dns] [info] |     Repository description
+[caa-fingerprint] [dns] [info] |   100005  1,2,3      34497/tcp6  mountd
+[caa-fingerprint] [dns] [info] |   100003  3,4         2049/tcp   nfs
+[caa-fingerprint] [dns] [info] |   100003  3,4         2049/tcp6  nfs
+[caa-fingerprint] [dns] [info] |   /backup/
+[caa-fingerprint] [dns] [info] |   /.git/HEAD
+[caa-fingerprint] [dns] [info] |     content-type
+[caa-fingerprint] [dns] [info] |   /api/
+[caa-fingerprint] [dns] [info] |   100227  3           2049/tcp6  nfs_acl
+[caa-fingerprint] [dns] [info] |   100005  1,2,3      58678/udp6  mountd
+[caa-fingerprint] [dns] [info] |   100000  3,4          111/udp6  rpcbind
+[caa-fingerprint] [dns] [info] |   OS type
+[caa-fingerprint] [dns] [info] |   100003  3           2049/udp6  nfs
+[caa-fingerprint] [dns] [info] |   Build
+[caa-fingerprint] [dns] [info] |   Locale version
+[caa-fingerprint] [dns] [info] |   100227  3           2049/udp   nfs_acl
+[caa-fingerprint] [dns] [info] |     X-Powered-By
+[caa-fingerprint] [dns] [info] |   SSL POODLE information leak
+[caa-fingerprint] [dns] [info] |   100021  1,3,4      45152/udp6  nlockmgr
+[caa-fingerprint] [dns] [info] |   VULNERABLE
+[caa-fingerprint] [dns] [info] |   cpe:/a:mysql:mysql:8.0.42-0ubuntu0.20.04.1:
+[caa-fingerprint] [dns] [info] |   Build
+[caa-fingerprint] [dns] [info] | http-aspnet-debug
+[caa-fingerprint] [dns] [info] |   GetRequest
+[caa-fingerprint] [dns] [info] | http-enum
+[caa-fingerprint] [dns] [info] | http-git
+[caa-fingerprint] [dns] [info] |   Build
+[caa-fingerprint] [dns] [info] |   FourOhFourRequest, GetRequest, HTTPOptions, RTSPRequest
+[caa-fingerprint] [dns] [info] | http-litespeed-sourcecode-download
+[caa-fingerprint] [dns] [info] |   100021  1,3,4      43405/udp   nlockmgr
+[caa-fingerprint] [dns] [info] |   Server version
+[caa-fingerprint] [dns] [info] |   phpMyAdmin grab_globals.lib.php subform Parameter Traversal Local File Inclusion
+[caa-fingerprint] [dns] [info] | http-vuln-cve2010-0738
+[caa-fingerprint] [dns] [info] | ssl-poodle
+[caa-fingerprint] [dns] [info] |   program version    port/proto  service
+[caa-fingerprint] [dns] [info] | Litespeed Web Server Source Code Disclosure (CVE-2010-2333)
+[caa-fingerprint] [dns] [info] | http-phpmyadmin-dir-traversal
+[caa-fingerprint] [dns] [info] |_    	NODEJS:602	0.0	https://vulners.com/nodejs/NODEJS:602
+[caa-fingerprint] [dns] [info] |_    	CVE-2024-21057	4.9	https
+[caa-fingerprint] [dns] [info] |_  /README
+[caa-fingerprint] [dns] [info] |_      https
+[caa-fingerprint] [dns] [info] |_  /api-docs/
+[caa-fingerprint] [dns] [info] |_  /phpinfo.php
+[caa-fingerprint] [dns] [info] |_  /cert/
+[caa-fingerprint] [dns] [info] |_  /manifest.json
+[caa-fingerprint] [dns] [info] |_  /cgi-bin/mj_wwwusr
+[caa-fingerprint] [dns] [info] | rpcinfo
+[caa-fingerprint] [dns] [info] |_  status
+[caa-fingerprint] [dns] [info] |_  Product Line ID
+[caa-fingerprint] [dns] [info] |_  100000  3,4          111/udp6  rpcbind
+[caa-fingerprint] [dns] [info] | /index.php source code
+[caa-fingerprint] [dns] [info] | fingerprint-strings
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_      https
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-trace
+[caa-fingerprint] [dns] [info] |_  /login/
+[caa-fingerprint] [dns] [info] |_  /register/
+[caa-fingerprint] [dns] [info] |_  /ui/
+[caa-fingerprint] [dns] [info] |_samba-vuln-cve-2012-1182
+[caa-fingerprint] [dns] [info] |_  100227  3           2049/udp6  nfs_acl
+[caa-fingerprint] [dns] [info] |_/index.php source code
+[caa-fingerprint] [dns] [info] |_
+[caa-fingerprint] [dns] [info] |_ssl-ccs-injection
+[caa-fingerprint] [dns] [info] |_    Found
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-iis-webdav-vuln
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_  /api/
+[caa-fingerprint] [dns] [info] |_http-server-header
+[caa-fingerprint] [dns] [info] |_smb-vuln-ms10-054
