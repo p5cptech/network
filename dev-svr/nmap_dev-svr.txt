@@ -17,6 +17,42 @@ PORT     STATE    SERVICE         VERSION
 9081/tcp open     ssl/cisco-aqos?
 9090/tcp open     ssl/zeus-admin?
 9200/tcp open     ssl/wap-wsp?
+[*] Nmap: Starting Nmap 7.95 ( https://nmap.org ) at 2026-01-09 13:39 +07
+[*] Nmap: Nmap scan report for 10.10.10.19
+[*] Nmap: Host is up (0.0014s latency).
+[*] Nmap: Not shown: 69 closed tcp ports (reset)
+[*] Nmap: PORT     STATE    SERVICE
+[*] Nmap: 13/tcp   filtered daytime
+[*] Nmap: 79/tcp   filtered finger
+[*] Nmap: 80/tcp   open     http
+[*] Nmap: 135/tcp  open     msrpc
+[*] Nmap: 139/tcp  open     netbios-ssn
+[*] Nmap: 144/tcp  filtered news
+[*] Nmap: 443/tcp  open     https
+[*] Nmap: 444/tcp  filtered snpp
+[*] Nmap: 445/tcp  open     microsoft-ds
+[*] Nmap: 465/tcp  filtered smtps
+[*] Nmap: 513/tcp  filtered login
+[*] Nmap: 514/tcp  filtered shell
+[*] Nmap: 515/tcp  filtered printer
+[*] Nmap: 873/tcp  filtered rsync
+[*] Nmap: 990/tcp  filtered ftps
+[*] Nmap: 1027/tcp filtered IIS
+[*] Nmap: 1900/tcp filtered upnp
+[*] Nmap: 2001/tcp filtered dc
+[*] Nmap: 3000/tcp filtered ppp
+[*] Nmap: 3389/tcp open     ms-wbt-server
+[*] Nmap: 4899/tcp filtered radmin
+[*] Nmap: 5357/tcp filtered wsdapi
+[*] Nmap: 5432/tcp filtered postgresql
+[*] Nmap: 5800/tcp filtered vnc-http
+[*] Nmap: 6000/tcp filtered X11
+[*] Nmap: 6001/tcp filtered X11:1
+[*] Nmap: 6646/tcp filtered unknown
+[*] Nmap: 7070/tcp filtered realserver
+[*] Nmap: 8000/tcp filtered http-alt
+[*] Nmap: 8009/tcp filtered ajp13
+[*] Nmap: 8443/tcp filtered https-alt
 
 Nmap scan report for 172.21.99.56
 PORT     STATE SERVICE         VERSION
@@ -27,6 +63,41 @@ PORT     STATE SERVICE         VERSION
 3690/tcp open  svnserve        Subversion
 7070/tcp open  ssl/realserver?
 8080/tcp open  http            Apache Tomcat 9.0.104
+[*] Nmap: Starting Nmap 7.95 ( https://nmap.org ) at 2026-01-09 10:13 +07
+[*] Nmap: Nmap scan report for 172.21.99.56
+[*] Nmap: Host is up (0.031s latency).
+[*] Nmap: Not shown: 70 closed tcp ports (reset)
+[*] Nmap: PORT      STATE    SERVICE
+[*] Nmap: 7/tcp     filtered echo
+[*] Nmap: 9/tcp     filtered discard
+[*] Nmap: 26/tcp    filtered rsftp
+[*] Nmap: 135/tcp   open     msrpc
+[*] Nmap: 139/tcp   open     netbios-ssn
+[*] Nmap: 144/tcp   filtered news
+[*] Nmap: 179/tcp   filtered bgp
+[*] Nmap: 199/tcp   filtered smux
+[*] Nmap: 444/tcp   filtered snpp
+[*] Nmap: 445/tcp   open     microsoft-ds
+[*] Nmap: 544/tcp   filtered kshell
+[*] Nmap: 548/tcp   filtered afp
+[*] Nmap: 631/tcp   filtered ipp
+[*] Nmap: 646/tcp   filtered ldp
+[*] Nmap: 873/tcp   filtered rsync
+[*] Nmap: 1755/tcp  filtered wms
+[*] Nmap: 1900/tcp  filtered upnp
+[*] Nmap: 2001/tcp  filtered dc
+[*] Nmap: 2049/tcp  filtered nfs
+[*] Nmap: 5357/tcp  filtered wsdapi
+[*] Nmap: 5432/tcp  filtered postgresql
+[*] Nmap: 5631/tcp  filtered pcanywheredata
+[*] Nmap: 6000/tcp  filtered X11
+[*] Nmap: 7070/tcp  open     realserver
+[*] Nmap: 8000/tcp  filtered http-alt
+[*] Nmap: 8009/tcp  filtered ajp13
+[*] Nmap: 8080/tcp  open     http-proxy
+[*] Nmap: 9100/tcp  filtered jetdirect
+[*] Nmap: 9999/tcp  filtered abyss
+[*] Nmap: 32768/tcp filtered filenet-tms
 
 Nmap scan report for 172.23.1.10
 PORT     STATE SERVICE       VERSION

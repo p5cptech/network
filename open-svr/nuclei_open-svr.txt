@@ -1,0 +1,87 @@
+nuclei -target http://192.168.1.29/
+[iis-shortname-detect] [http] [info] http://192.168.1.29/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://192.168.1.29/o6kq4kmq*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://192.168.1.29/*~1*/a.aspx
+[waf-detect:aspgeneric] [http] [info] http://192.168.1.29/
+[mssql-detect] [javascript] [info] 192.168.1.29:1433
+[smb-signing] [javascript] [medium] 192.168.1.29:445
+[smb-os-detect] [javascript] [info] 192.168.1.29:445 ["Windows 7, Service Pack 1"]
+[smb-enum-domains] [javascript] [info] 192.168.1.29:445 ["DomainName: ADR-BACKUP"]
+[smb-enum] [javascript] [info] 192.168.1.29:445 ["DNSComputerNamen: ADR-BACKUP","DNSComputerName: ADR-BACKUP","ForestName:","OSVersion: 6.1.7601","NetBIOSComputerName: ADR-BACKUP","NetBIOSDomainName: ADR-BACKUP"]
+[smb-version-detect:smb-version] [javascript] [info] 192.168.1.29:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] 192.168.1.29:445 ["SystemTime: 2026-01-13T01:49:19.000Z ServerStartTime: 2026-01-06T08:43:24.000Z"]
+[smb2-capabilities] [javascript] [info] 192.168.1.29:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[nfs-v3-exposed] [tcp] [info] 192.168.1.29:2049
+[rdp-detection:win2008R2DC] [tcp] [info] 192.168.1.29:3389
+[rdp-detect] [javascript] [info] 192.168.1.29:3389
+[tech-detect:ms-iis] [http] [info] http://192.168.1.29/
+[options-method] [http] [info] http://192.168.1.29/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:content-type-charset-specification] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.29/
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.29/
+[microsoft-iis-version] [http] [info] http://192.168.1.29/ ["Microsoft-IIS/7.5"]
+
+nuclei -target http://192.168.1.48/
+[iis-shortname-detect] [http] [info] http://192.168.1.48/*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://192.168.1.48/ntp00lrj*~1*/a.aspx
+[iis-shortname-detect] [http] [info] http://192.168.1.48/*~1*/a.aspx
+[waf-detect:aspgeneric] [http] [info] http://192.168.1.48/
+[mssql-detect] [javascript] [info] 192.168.1.48:1433
+[smb-enum-domains] [javascript] [info] 192.168.1.48:445 ["DomainName: APPSERVER07"]
+[smb-enum] [javascript] [info] 192.168.1.48:445 ["NetBIOSComputerName: APPSERVER07","NetBIOSDomainName: APPSERVER07","DNSComputerNamen: APPSERVER07","DNSComputerName: APPSERVER07","ForestName:","OSVersion: 6.1.7601"]
+[smb-version-detect:smb-version] [javascript] [info] 192.168.1.48:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] 192.168.1.48:445 ["SystemTime: 2026-01-13T02:18:54.000Z ServerStartTime: 2025-10-01T11:02:30.000Z"]
+[smb-signing] [javascript] [medium] 192.168.1.48:445
+[smb-os-detect] [javascript] [info] 192.168.1.48:445 ["Windows 7, Service Pack 1"]
+[smb2-capabilities] [javascript] [info] 192.168.1.48:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[rdp-detect] [javascript] [info] 192.168.1.48:3389
+[vnc-service-detect] [tcp] [info] 192.168.1.48:5900 ["RFB 003.008"]
+[rdp-detection:win2008R2DC] [tcp] [info] 192.168.1.48:3389
+[tech-detect:ms-iis] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:content-security-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:permissions-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:referrer-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:clear-site-data] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:x-frame-options] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://192.168.1.48/
+[http-missing-security-headers:content-type-charset-specification] [http] [info] http://192.168.1.48/
+[options-method] [http] [info] http://192.168.1.48/ ["OPTIONS, TRACE, GET, HEAD, POST"]
+[microsoft-iis-version] [http] [info] http://192.168.1.48/ ["Microsoft-IIS/7.5"]
+
+nuclei -target http://172.22.1.57/
+[rdp-detect] [javascript] [info] 172.22.1.57:3389
+[smb-version-detect:smb-version] [javascript] [info] 172.22.1.57:445 ["SMB 2.1"]
+[smb2-server-time] [javascript] [info] 172.22.1.57:445 ["SystemTime: 2026-01-13T02:33:26.000Z ServerStartTime: 2009-04-22T19:24:48.000Z"]
+[smb-enum-domains] [javascript] [info] 172.22.1.57:445 ["DomainName: LENOVO-LA0X1930"]
+[smb2-capabilities] [javascript] [info] 172.22.1.57:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-enum] [javascript] [info] 172.22.1.57:445 ["DNSComputerName: LENOVO-LA0X1930","ForestName:","OSVersion: 10.0.20348","NetBIOSComputerName: LENOVO-LA0X1930","NetBIOSDomainName: LENOVO-LA0X1930","DNSComputerNamen: LENOVO-LA0X1930"]
+[smb-signing] [javascript] [medium] 172.22.1.57:445
+[smb-os-detect] [javascript] [info] 172.22.1.57:445 ["Windows Server 2022, Version 21H2"]
+[redis-detect] [tcp] [info] 172.22.1.57:6379
+[rdp-detection:win2016] [tcp] [info] 172.22.1.57:3389
+[openresty-detect] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:content-security-policy] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:referrer-policy] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:permissions-policy] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:x-frame-options] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:clear-site-data] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://172.22.1.57/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://172.22.1.57/

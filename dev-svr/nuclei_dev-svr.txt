@@ -1,0 +1,24 @@
+[rdp-detect] [javascript] [info] 10.10.10.19:3389
+[smb-version-detect:smb-version] [javascript] [info] 10.10.10.19:445 ["SMB 2.1"]
+[smb-enum-domains] [javascript] [info] 10.10.10.19:445 ["DomainName: adrqlik01"]
+[smb-enum] [javascript] [info] 10.10.10.19:445 ["ForestName:","OSVersion: 10.0.14393","NetBIOSComputerName: ADRQLIK01","NetBIOSDomainName: ADRQLIK01","DNSComputerNamen: adrqlik01","DNSComputerName: adrqlik01"]
+[smb2-server-time] [javascript] [info] 10.10.10.19:445 ["SystemTime: 2026-01-09T08:05:41.000Z ServerStartTime: 2025-07-22T09:20:41.000Z"]
+[smb2-capabilities] [javascript] [info] 10.10.10.19:445 ["["DFSSupport","LargeMTU","Leasing"]"]
+[smb-os-detect] [javascript] [info] 10.10.10.19:445 ["Windows 10, Version 1607"]
+[smb-signing] [javascript] [medium] 10.10.10.19:445
+[rdp-detection:win2016] [tcp] [info] 10.10.10.19:3389
+[qlik-sense-server] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=ce953c6b-fb00-43b7-a21b-ca36254a30d0
+[http-missing-security-headers:strict-transport-security] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:permissions-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:x-frame-options] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:content-security-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:x-content-type-options] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:referrer-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:clear-site-data] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=7cd5d958-39d8-4664-bccf-b33a6746b704
+[tech-detect:ms-httpapi] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=61f5b692-481e-45a6-9f37-05d9f32ab248
+[tech-detect:qlik-sense] [http] [info] http://10.10.10.19/internal_forms_authentication/?targetId=61f5b692-481e-45a6-9f37-05d9f32ab248
+[INF] Scan complete
