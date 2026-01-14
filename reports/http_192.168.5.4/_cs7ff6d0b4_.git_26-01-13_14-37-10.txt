@@ -1,0 +1,256 @@
+# Dirsearch started Tue Jan 13 14:44:27 2026 as: /usr/lib/python3/dist-packages/dirsearch/dirsearch.py -u http://192.168.5.4/cs7ff6d0b4/.git
+
+302   373B   http://192.168.5.4/cs7ff6d0b4/.git/+CSCOT+/oem-customization?app=AnyConnect&type=oem&platform=..&resource-type=..&name=%2bCSCOE%2b/portal_inc.lua    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?app=AnyConnect&type=oem&platform=..&resource-type=..&name=%2BCSCOE%2B/portal_inc.lua
+302   362B   http://192.168.5.4/cs7ff6d0b4/.git/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?type=mst&textdomain=/%2BCSCOE%2B/portal_inc.lua&default-language&lang=../
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.angular-cli.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.babel.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.azure/accessTokens.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.bower.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.brackets.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.buildkite/pipeline.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.circleci/.firebase.secrets.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.composer/auth.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.composer/composer.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.config/configstore/snyk.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.config/gatsby/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.config/gatsby/events.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.cordova/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.codeclimate.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.csscomb.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.csslintrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.css
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.deployment-config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.docker/daemon.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.docker/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.esdoc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.drone.jsonnet
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.eslintrc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.fontcustom-manifest.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.gdrive/token_v2.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.geppetto-rc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.gif
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.git.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.goxc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.groc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jscs.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jscsrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jscsrc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jsdoc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jsdtscope
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jshintignore
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jsfmtrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jshintrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jslintrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jupyter/jupyter_notebook_config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.markdownlint.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.lanproxy/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.mozilla/firefox/logins.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.mvn/wrapper/maven-wrapper.jar
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jpg
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.jsbeautifyrc
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.luna/user_info.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.npm/anonymous-cli-metrics.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.png
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.prettierrc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.projections.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.release.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.repo-metadata.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.settings/.jsdtscope
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.settings/org.eclipse.wst.jsdt.ui.superType.container
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.remote-sync.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.stylelintrc.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.settings/org.eclipse.wst.jsdt.ui.superType.name
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.settings/rules.json?auth=FIREBASE_SECRET
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.terraform/modules/modules.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/ftp-sync.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/launch.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/settings.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/sftp.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/tasks.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.well-known/assetlinks.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.vscode/extensions.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.well-known/host-meta.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.well-known/jwks.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/.yo-rc.json
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvCatPG.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/_wpeprivate/config.json
+302   297B   http://192.168.5.4/cs7ff6d0b4/.git/_vti_bin/shtml.exe?_vti_rpc    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?_vti_rpc
+302   306B   http://192.168.5.4/cs7ff6d0b4/.git/AdaptCMS/admin.php?view=/&view=stats    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?view=/&view=stats
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/AdaptCMS/admin.php?view=/&view=levels    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?view=/&view=levels
+302   309B   http://192.168.5.4/cs7ff6d0b4/.git/AdaptCMS/admin.php?view=/&view=settings    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?view=/&view=settings
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/adm/style/admin.css
+302   306B   http://192.168.5.4/cs7ff6d0b4/.git/admin/portalcollect.php?f=http://xxx&t=js    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?f=http://xxx&t=js
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/admin_my_avatar.png
+302   308B   http://192.168.5.4/cs7ff6d0b4/.git/ADSearch.cc?methodToCall=search    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?methodToCall=search
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/login.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/spec/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/apidocs/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/v1/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/api/v2/swagger.json
+302   332B   http://192.168.5.4/cs7ff6d0b4/.git/analytics/saw.dll?getPreviewImage&previewFilePath=/etc/passwd    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?getPreviewImage&previewFilePath=/etc/passwd
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/app/composer.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/app/config/global.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/app/config/adminConf.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/archaius.json
+302   300B   http://192.168.5.4/cs7ff6d0b4/.git/application.wadl?detail=true    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?detail=true
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/auditevents.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/autoconfig.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/beans.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/blockchain.json
+302   329B   http://192.168.5.4/cs7ff6d0b4/.git/bmc_help2u/servlet/helpServlet2u?textareaWrap=/bmc_help2u/WEB-INF/web.xml    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?textareaWrap=/bmc_help2u/WEB-INF/web.xml
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/bower.json
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/bugs/verify.php?confirm_hash=&id=1    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?confirm_hash=&id=1
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/box.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/bundles/kibana.style.css
+302   292B   http://192.168.5.4/cs7ff6d0b4/.git/cgi-bin/htimage.exe?2,2    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?2,2
+302   292B   http://192.168.5.4/cs7ff6d0b4/.git/cgi-bin/imagemap.exe?2,2    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?2,2
+302   300B   http://192.168.5.4/cs7ff6d0b4/.git/CgiStart?page=Single    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?page=Single
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/classic.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/client_secret.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/client_secrets.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/classic.jsonp
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/compile_commands.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/cni-conf.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/composer/installed.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/config.json.cfm
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/console/base/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/context.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/console/payments/config.json
+302   319B   http://192.168.5.4/cs7ff6d0b4/.git/cp/Shares?user=&protocol=webaccess&v=2.3    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?user=&protocol=webaccess&v=2.3
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/credentials/gcloud.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/description.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/docs.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/docs/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/Dockerrun.aws.json
+302   296B   http://192.168.5.4/cs7ff6d0b4/.git/debug/pprof/goroutine?debug=1    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?debug=1
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/dump.json
+302   302B   http://192.168.5.4/cs7ff6d0b4/.git/eam/vib?id=/etc/issue    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?id=/etc/issue
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/env.json
+302   302B   http://192.168.5.4/cs7ff6d0b4/.git/faces/javax.faces.resource/web.xml?ln=../WEB-INF    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?ln=../WEB-INF
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/faces/javax.faces.resource/web.xml?ln=..\\WEB-INF    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?ln=..%5C%5CWEB-INF
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/features.json
+302   327B   http://192.168.5.4/cs7ff6d0b4/.git/filter/jmol/js/jsmol/php/jsmol.php?call=getRawDataFromDatabase&query=file    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?call=getRawDataFromDatabase&query=file
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/freeline_project_description.json
+302   314B   http://192.168.5.4/cs7ff6d0b4/.git/getFavicon?host=burpcollaborator.net    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?host=burpcollaborator.net
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/globals.jsa
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/google-services.json
+302   312B   http://192.168.5.4/cs7ff6d0b4/.git/gotoURL.asp?url=google.com&id=43569    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?url=google.com&id=43569
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/graphql/schema.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/health.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/heapdump.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/Homestead.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/info.json
+302   304B   http://192.168.5.4/cs7ff6d0b4/.git/install.php?profile=default    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?profile=default
+302   297B   http://192.168.5.4/cs7ff6d0b4/.git/install/index.php?upgrade/    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?upgrade/
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/installed.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/javax.faces.resource.../WEB-INF/web.xml.jsf
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/jira/secure/Dashboard.jspa
+302   342B   http://192.168.5.4/cs7ff6d0b4/.git/jmx-console/HtmlAdaptor?action=inspectMBean&name=jboss.system:type=ServerInfo    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?action=inspectMBean&name=jboss.system:type=ServerInfo
+302   303B   http://192.168.5.4/cs7ff6d0b4/.git/jolokia/list?maxObjects=100    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?maxObjects=100
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/jbpm-console/app/tasks.jsf
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/keys.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/learn/ruubikcms/ruubikcms/tiny_mce/plugins/tinybrowser/tb_tinymce.js.php
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/learn/ruubikcms/ruubikcms/website/scripts/jquery.lightbox-0.5.js.php
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/learn/ruubikcms/ruubikcms/tiny_mce/plugins/tinybrowser/tb_standalone.js.php
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/log.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/loggers.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/login.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/logo.gif
+302   327B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?get=BEANNAME&att=MYATTRIBUTE&key=MYKEY
+302   334B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?get=java.lang:type=Memory&att=HeapMemoryUsage    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?get=java.lang:type=Memory&att=HeapMemoryUsage
+302   346B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?invoke=BEANNAME&op=METHODNAME&ps=COMMASEPARATEDPARAMETERS
+302   343B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?invoke=Catalina%3Atype%3DService&op=findConnectors&ps=
+302   298B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?qry=STUFF    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?qry=STUFF
+302   330B   http://192.168.5.4/cs7ff6d0b4/.git/manager/jmxproxy/?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?set=BEANNAME&att=MYATTRIBUTE&val=NEWVALUE
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/manifest.json
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/mantis/verify.php?id=1&confirm_hash=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?id=1&confirm_hash=
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/mantisBT/verify.php?id=1&confirm_hash=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?id=1&confirm_hash=
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/mappings.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/META.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/metric_tracking.json
+302   349B   http://192.168.5.4/cs7ff6d0b4/.git/MicroStrategy/servlet/taskProc?taskId=shortURL&taskEnv=xml&taskContentType=xml&srcURL=https    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?taskId=shortURL&taskEnv=xml&taskContentType=xml&srcURL=https
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/metrics.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/modern.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/modern.jsonp
+302   295B   http://192.168.5.4/cs7ff6d0b4/.git/msdac/root.exe?/c+dir    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?/c+dir
+302   297B   http://192.168.5.4/cs7ff6d0b4/.git/names.nsf/People?OpenView    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?OpenView
+302   305B   http://192.168.5.4/cs7ff6d0b4/.git/node/1?_format=hal_json    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?_format=hal_json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/npm-shrinkwrap.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/ng-cli-backup.json
+302   301B   http://192.168.5.4/cs7ff6d0b4/.git/open-flash-chart.swf?get-data=xss    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?get-data=xss
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/openapi.json
+302   296B   http://192.168.5.4/cs7ff6d0b4/.git/p_/webdav/xmltools/minidom/xml/sax/saxutils/os/popen2?cmd=dir    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cmd=dir
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/package.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/package-lock.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/pause.json
+302   305B   http://192.168.5.4/cs7ff6d0b4/.git/PDC/ajaxreq.php?PARAM=127.0.0.1+    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?PARAM=127.0.0.1+
+302   311B   http://192.168.5.4/cs7ff6d0b4/.git/plugins/servlet/gadgets/makeRequest?url=https://google.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?url=https://google.com
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/product.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/project.fragment.lock.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/project.lock.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/providers.json
+302   314B   http://192.168.5.4/cs7ff6d0b4/.git/proxy.stream?origin=https://google.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?origin=https://google.com
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/refresh.json
+302   303B   http://192.168.5.4/cs7ff6d0b4/.git/resolute.php?img=config.php    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?img=config.php
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/resources/.arch-internal-preview.css
+302   342B   http://192.168.5.4/cs7ff6d0b4/.git/remote/fgt_lang?lang=/../../../../////////////////////////bin/sslvpnd    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?lang=/../../../../////////////////////////bin/sslvpnd
+302   342B   http://192.168.5.4/cs7ff6d0b4/.git/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/restart.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/resume.json
+302   297B   http://192.168.5.4/cs7ff6d0b4/.git/scripts/iisadmin/ism.dll?http/dir    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?http/dir
+302   295B   http://192.168.5.4/cs7ff6d0b4/.git/scripts/root.exe?/c+dir    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?/c+dir
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/Dashboard.jspa
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/popups/UserPickerBrowser.jspa
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/QueryComponent!Default.jspa
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/ViewUserHover.jspa
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/service-registry/instance-status.json
+302   293B   http://192.168.5.4/cs7ff6d0b4/.git/service?Wsdl    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?Wsdl
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/ConfigurePortalPages!default.jspa?view=popular
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/secure/ContactAdministrators!default.jspa
+302   349B   http://192.168.5.4/cs7ff6d0b4/.git/servlet/taskProc?taskId=shortURL&taskEnv=xml&taskContentType=xml&srcURL=https    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?taskId=shortURL&taskEnv=xml&taskContentType=xml&srcURL=https
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/server/config.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/sftp-config.json
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvFeaThumb.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvSecondaryRight.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvSideFea.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvSinglePhoto.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvSubFea.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvHover.php?cache=false&cat=0&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=0&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvMainPGThumb.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvMainFea.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+302   316B   http://192.168.5.4/cs7ff6d0b4/.git/show_image_NpAdvInnerSmall.php?cache=false&cat=1&filename=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?cache=false&cat=1&filename=
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/skin1_admin.css
+302   308B   http://192.168.5.4/cs7ff6d0b4/.git/solr/admin/file/?file=solrconfig.xml    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?file=solrconfig.xml
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/static/api/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/stats.json
+302   298B   http://192.168.5.4/cs7ff6d0b4/.git/status?full=true    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?full=true
+302   326B   http://192.168.5.4/cs7ff6d0b4/.git/sugarcrm/index.php?module=Accounts&action=ShowDuplicates    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?module=Accounts&action=ShowDuplicates
+302   326B   http://192.168.5.4/cs7ff6d0b4/.git/sugarcrm/index.php?module=Contacts&action=ShowDuplicates    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?module=Contacts&action=ShowDuplicates
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/swagger/v1/swagger.json/
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/swagger/v1/swagger.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/swagger/v2/swagger.json
+302   297B   http://192.168.5.4/cs7ff6d0b4/.git/Telerik.Web.UI.WebResource.axd?type=rau    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?type=rau
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/trace.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/tsconfig.json
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/users.json
+302   303B   http://192.168.5.4/cs7ff6d0b4/.git/v2/keys/?recursive=true    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?recursive=true
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/vendor/composer/installed.json
+302   307B   http://192.168.5.4/cs7ff6d0b4/.git/verify.php?id=1&confirm_hash=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?id=1&confirm_hash=
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/wallet.json
+302   330B   http://192.168.5.4/cs7ff6d0b4/.git/wavemaker/studioService.download?method=getContent&inUrl=file///etc/passwd    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?method=getContent&inUrl=file///etc/passwd
+302   298B   http://192.168.5.4/cs7ff6d0b4/.git/web-console/status?full=true    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?full=true
+200   191B   http://192.168.5.4/cs7ff6d0b4/.git/WEB-INF/web.xml.jsf
+302   299B   http://192.168.5.4/cs7ff6d0b4/.git/WebResource.axd?d=LER8t9aS    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?d=LER8t9aS
+302   295B   http://192.168.5.4/cs7ff6d0b4/.git/wp-content/plugins/backwpup/app/options-view_log-iframe.php?wpabs=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?wpabs=
+302   293B   http://192.168.5.4/cs7ff6d0b4/.git/wp-content/plugins/jrss-widget/proxy.php?url=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?url=
+302   294B   http://192.168.5.4/cs7ff6d0b4/.git/wp-content/plugins/wp-publication-archive/includes/openfile.php?file=    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?file=
+302   325B   http://192.168.5.4/cs7ff6d0b4/.git/wps/cmis_proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?Logout&RedirectTo=http://example.com
+302   325B   http://192.168.5.4/cs7ff6d0b4/.git/wps/common_proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?Logout&RedirectTo=http://example.com
+302   401B   http://192.168.5.4/cs7ff6d0b4/.git/wps/contenthandler/!ut/p/digest!8skKFbWr_TwcZcvoc9Dn3g/?uri=http://www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?uri=http://www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com
+302   325B   http://192.168.5.4/cs7ff6d0b4/.git/wps/myproxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?Logout&RedirectTo=http://example.com
+302   325B   http://192.168.5.4/cs7ff6d0b4/.git/wps/proxy/http/www.redbooks.ibm.com/Redbooks.nsf/RedbookAbstracts/sg247798.html?Logout&RedirectTo=http://example.com    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?Logout&RedirectTo=http://example.com
+302   324B   http://192.168.5.4/cs7ff6d0b4/.git/zabbix.php?action=dashboard.view&dashboardid=1    -> REDIRECTS TO: http://192.168.5.4/cs7ff6d0b4/config/log_off_page.htm?action=dashboard.view&dashboardid=1
